@@ -53,7 +53,7 @@ Let's look at some questions that hint at potential complications of having mult
 
 #### Think Pair Share (10:10-10:20)
 
-Turn to the person next to you and discuss the questions below. After 10 minutes of discussion and writing your responses as a comment on [this issue](https://github.com/ga-wdi-lessons/git-intro/issues/14), we'll go over responses as a class.
+Turn to the person next to you and discuss the questions below. After 10 minutes of discussion and writing your responses as a comment on [this issue](https://github.com/ga-wdi-lessons/git-intro/issues/15), we'll go over responses as a class.
 
 - Why might we want to have different versions of a file?
 - What strategies have you used to keep track of changes you've made to a document or file before? If you haven't, brainstorm ways you might keep track of different versions of a file/document.
@@ -110,7 +110,7 @@ After watching [this video](https://www.youtube.com/watch?v=LVAkxmZqNNE), let's 
 
 ### The Git Repository (or Git Repo)
 
-A ***repository*** is like a special kind of filing cabinet that stores a bunch of snapshots of a project taken at different points the project's development. It is made out of **commits**, which are snapshots of a file tree, as the file tree changes over time. More specifically and technically, a repository is a data structure, not to be confused with a working directory, that stores information on changes in files. 
+A ***repository*** is like a special kind of filing cabinet that stores a bunch of snapshots of a project taken at different points the project's development. It is made out of **commits**, which are snapshots of a file tree, as the file tree changes over time. More specifically and technically, a repository is a data structure, not to be confused with a working directory, that stores information on changes in files.
 
 Repos are also highly 'aware' of changes made within them; it can detect when files have been added or changed.
 
