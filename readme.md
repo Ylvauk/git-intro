@@ -33,7 +33,8 @@ In this lesson, we will learn the basics of using git and see how git is used wi
   <ul>
     <li>...a way of *tracking changes* made to a file or group of files over time.</li>
 
-    <li>It's very likely that each of us has tried to keep track of changes made to a file by creating different versions `of that file. This however can be messy or complicated.</li> </ul>
+    <li>It's very likely that each of us has tried to keep track of changes made to a file by creating different versions `of that file. This however can be messy or complicated.</li>
+  </ul>
 </details>
 Let's look at some questions that hint at potential complications of having multiple or many versions of a file.
 
