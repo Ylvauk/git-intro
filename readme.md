@@ -299,7 +299,7 @@ You should see a response like:
 Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-If you get `Permission Denied`, please reference [this lesson](https://github.com/ga-wdi-lessons/git-ssh).
+If you get `Permission Denied`, please reference [this lesson](https://git.generalassemb.ly/ga-wdi-lessons/git-ssh).
 
 Once you've configured your SSH Keys with Github:
 
@@ -348,9 +348,9 @@ Once you've configured your SSH Keys with Github:
 
 ### Demo
 
-Next I'll demo this process, by forking GA's classroom management tool, Garnet.
+Next I'll demo this process, by forking the homework, Haiku.
 
-Demo forking / cloning / PR for [Garnet](https://github.com/ga-dc/garnet)
+Demo forking / cloning / PR for [Haiku](https://git.generalassemb.ly/ga-wdi-exercises/haiku)
 
 
 ## Bonus Material
@@ -393,7 +393,7 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 
 ## Homework
 
-### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions there.
+### 1. Visit the [haiku](https://git.generalassemb.ly/ga-wdi-exercises/haiku) repo and follow the instructions there.
 
 In the comments of the Pull Request description, please include a block like so (numbers out of 5):
 
