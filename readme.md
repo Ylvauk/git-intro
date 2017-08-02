@@ -25,30 +25,16 @@ In this lesson, we will learn the basics of using git and see how git is used wi
 
 ---
 
-## Framing (10:00 - 10:10)
+### Framing: What Version Control Is (10:00 - 10:10)
+<details>
+  <summary>
+    Simply put, version control is...
+  </summary>
+  <ul>
+    <li>...a way of *tracking changes* made to a file or group of files over time.</li>
 
-To jump off of the previous command-line interface lesson, let's take a quick look at how our files are organized. This will be important for conceptualizing how repositories work.
-
-### Example of a *File Tree*
-
-Our projects might have a file structure that looks like this:
-
-![Example of file tree](images/file_tree_example.png)
-
-This is also our **working tree**-- the tree of files within the working directory.
-
-### File Tree Relationships & Terminology
-- top_level_folder is our **working directory**
-- top_level_folder has 2 **child** folders, *scripts* and *public*
-- *scripts* and *public* each also have 1 **child** folder
-- *js* has a **parent directory**, *scripts*, just as *images* does with *public*.
-
-### What Version Control Is
-
-Simply put, version control is a way of *tracking changes* made to a file or group of files over time.
-
-It's very likely that each of us has tried to keep track of changes made to a file by creating different versions of that file. This however can be messy or complicated.
-
+    <li>It's very likely that each of us has tried to keep track of changes made to a file by creating different versions `of that file. This however can be messy or complicated.</li> </ul>
+</details>
 Let's look at some questions that hint at potential complications of having multiple or many versions of a file.
 
 #### Think Pair Share (10:10-10:20)
@@ -97,8 +83,9 @@ It's not only wonderful but *absolutely essential* to have this kind of safety n
 
 - When collaborating on a project with other developers, *git* gives us tools to create our own 'area' for writing code, within that project.
 
-  This 'area' is called a ***branch***. Another use-case for creating your own **branch** is for refactoring (or re-writing) working code in order to improve it.
-  We'll cover **branching** in-depth with the next lesson on *git*.
+- This 'area' is called a ***branch***. Another use-case for creating your own **branch** is for refactoring (or re-writing) working code in order to improve it.
+
+We'll cover **branching** in-depth with the next lesson on *git*.
 
 Now that we've talked at a high level about what problems git solves and what features it provides, let's break down some of the terminology.
 
@@ -123,12 +110,7 @@ We're used to thinking about files stored on the computer in terms of files and 
 
 ---
 
-### Anatomy of a Repo: Commits and Repositories (10:40 - 10:50)
-
-When we create save-point or a ***commit***, we're saving our project's **file tree** in its current state. A repo is essentially made up of **commits**, just as a filing cabinet is 'made up of' files.
-
-
-#### Terminology
+#### Terminology  (10:40 - 10:50)
 
 * **commit** - a snapshot of the working tree at a given time (along with a message explaining what changed)
 * **the index** - also called the staging area; where we add changes we want committed to the git repository
@@ -136,6 +118,9 @@ When we create save-point or a ***commit***, we're saving our project's **file t
 * **status** - what files have changed, and what state they are in.
   * try typing `git status` within a directory containing a repository
 
+### Anatomy of a Repo: Commits and Repositories
+
+When we create save-point or a ***commit***, we're saving our project's **file tree** in its current state. A repo is essentially made up of **commits**, just as a filing cabinet is 'made up of' files.
 
 ![Git Local Diagram](/images/git-local.jpg)
 
@@ -180,24 +165,6 @@ Let's see some of these mechanics in action. After seeing a demo of the pattern 
       </li>
     </ul>
 </details>
-
-
-
-
-#### Git History & Verifying Our Commits
-
-```
-$ git log
-```
-
-As your commit history grows more complex, the default output of git log will not be very useful. To improve your `git log` experience, try this alias our former instructor Jesse created `gl`:
-
-
-```
-$ curl http://www.wdidc.org/~jesse/gl >> ~/.bash_profile
-$ source ~/.bash_profile
-$ gl
-```
 
 ### Break (10 min)
 
