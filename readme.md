@@ -136,6 +136,13 @@ When we create save-point or a ***commit***, we're saving our project's **file t
 
 Let's see some of these mechanics in action. After seeing a demo of the pattern of adding a file and committing (`git add`, `git commit`), we'll jump into a short exercise.
 
+### Warm up exercise: Git challenge exercise - We Do (15 minutes)
+
+1. Navigate to the [Git Challenege](https://try.github.io/levels/1/challenges/1)
+2. Complete exercises 1-10.
+3. Read the terms and concepts.
+*** Stop after exercise 10 ***
+
 ### Exercise 1: Create a Repository and Committing Locally - We Do (5 minutes)
 
 1. Create a new `resume` folder in sandbox directory.
@@ -317,12 +324,7 @@ Once you've configured your SSH Keys with Github:
 ![Git Process Diagram](/images/git.gif)
 
 
-### Demo
-
-Next I'll demo this process, by forking the homework, Haiku.
-
-Demo forking / cloning / PR for [Haiku](https://git.generalassemb.ly/ga-wdi-exercises/haiku)
-
+### Revisit Git Challenge Exercise. Stop after exercise 13
 
 ## Bonus Material
 
