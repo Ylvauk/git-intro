@@ -316,14 +316,6 @@ Once you've configured your SSH Keys with Github:
 ##### GIF Recap
 ![Git Process Diagram](/images/git.gif)
 
-
-### Demo
-
-Next I'll demo this process, by forking the homework, Haiku.
-
-Demo forking / cloning / PR for [Haiku](https://git.generalassemb.ly/ga-wdi-exercises/haiku)
-
-
 ## Bonus Material
 
 Anyone missing the git branch `(master)` in their bash prompt?
@@ -347,6 +339,10 @@ What if you staged some work and realize you don't want that saved? Or, what if 
   - this will return the changes you made to be untracked
 8. to completely undo the changes, run ```git checkout -- resume.txt``` after ```git reset head^```
 
+### More Practice with Git: Git challenge exercise - Tutorial
+
+1. Navigate to the [Git Challenege](https://try.github.io/levels/1/challenges/1)
+2. Complete all exercises.
 
 ### Closing
 
