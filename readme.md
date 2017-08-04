@@ -211,10 +211,24 @@ So far we've been doing everything on our own machine, or **locally**.
 
 Documentation takes time to be able to read, it's not easy at first to be able to extract what you need to know. Documentation can vary in readability; some documentation will be particularly difficult to read through for beginners. But with this exercise, we'll get some early practice.
 
-Let's take a brief look over provided reading on [Git Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-and prepare to define the key terms below (read through pushing remotes).
+##### Option 1
 
-Pair with a partner and spend 10 minutes reading through the documentation linked above and jotting down notes on the terms. Afterwards, we'll spend a few minutes discussing our findings.
+Run this command in your terminal to output a glossary:
+
+`git help`
+
+##### Option 2
+
+Look over this [Github Glossary](https://help.github.com/articles/github-glossary/)
+
+##### Option 3
+
+Google search all the terms/find your own documentation.
+
+#### Instructions:
+
+1.  Pair with a partner and spend 10 minutes to do research on the terms using one or a mix of the methods listed above.
+2. Afterwards, we'll spend a few minutes discussing our findings.
 
 #### Key Terms to Define
 - **remote**
