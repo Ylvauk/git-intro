@@ -316,9 +316,6 @@ Once you've configured your SSH Keys with Github:
 ##### GIF Recap
 ![Git Process Diagram](/images/git.gif)
 
-
-### Revisit Git Challenge Exercise. Stop after exercise 13
-
 ## Bonus Material
 
 Anyone missing the git branch `(master)` in their bash prompt?
