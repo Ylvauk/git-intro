@@ -136,13 +136,6 @@ When we create save-point or a ***commit***, we're saving our project's **file t
 
 Let's see some of these mechanics in action. After seeing a demo of the pattern of adding a file and committing (`git add`, `git commit`), we'll jump into a short exercise.
 
-### Warm up exercise: Git challenge exercise - We Do (15 minutes)
-
-1. Navigate to the [Git Challenege](https://try.github.io/levels/1/challenges/1)
-2. Complete exercises 1-10.
-3. Read the terms and concepts.
-*** Stop after exercise 10 ***
-
 ### Exercise 1: Create a Repository and Committing Locally - We Do (5 minutes)
 
 1. Create a new `resume` folder in sandbox directory.
@@ -349,6 +342,10 @@ What if you staged some work and realize you don't want that saved? Or, what if 
   - this will return the changes you made to be untracked
 8. to completely undo the changes, run ```git checkout -- resume.txt``` after ```git reset head^```
 
+### More Practice with Git: Git challenge exercise - Tutorial
+
+1. Navigate to the [Git Challenege](https://try.github.io/levels/1/challenges/1)
+2. Complete all exercises.
 
 ### Closing
 
