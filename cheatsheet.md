@@ -42,7 +42,7 @@ Forking and Pull Requests are features of Github (not git).
 4. Push changes to your fork on GH: `$ git push origin master`
 5. Open a pull request by clicking the Pull Request link on your fork page.
 
-### Three Commands to Memorize (you will use them all the time!)
+### Three Commands to Remember (you will use them all the time!)
 * `$ git add <file1> <file2>` ...
 * `$ git commit -m "descriptive message"`
  * `$ git push -u origin master`
