@@ -245,7 +245,7 @@ To check whether you have SSH access set up with GitHub / GHE, run these two com
 ssh -T git@github.com
 ```
 ```
-ssh -T git@generalassemb.ly
+ssh -T git@git.generalassemb.ly
 ```
 
 If you are already set up, you should see a response like:
