@@ -9,7 +9,7 @@
 
 ## Framing (5:00 / 0:05)
 
-Git is one of a couple tools that you will end up using every day as a developer. It's an essential component to development work. So what is it?
+Git is one of a couple tools that you will end up using every day as a developer; it's an essential component to every developer's work. So what is it?
 
 Git is a version control tool: it keeps track of changes across a collection of files for us. When we use Git, we can see what changes we made and seamlessly merge them with changes from our coworkers.
 
@@ -33,7 +33,7 @@ Turn to the person next to you and discuss the questions below. After 5 minutes,
 
 If you've worked with track changes in Microsoft Word, then you're familiar with part of what Git does. Track changes will track any changes (inserted text, deleted text, etc) to a document. It will mark those changes by highlighting them in red or green.
 
-Git does this and a lot more. For example, if you are your coworker are writing a memo Word and using track changes, how do you keep track of which version is the final version (yours or your coworker's)? One common solution to this is to make a copy of the memo and add your initials to the file name, along with the date and time so you can keep track of different versions of the memo. Someone then has to manually add any changes you make to their version, or vice versa.
+Git does this and a lot more. For example, if you and your coworker are writing a memo in Microsoft Word and using track changes, how do you keep track of which version is the final version (yours or your coworker's)? One common solution to this is to make a copy of the memo and add your initials to the file name, along with the date and time so you can keep track of different versions of the memo. Someone then has to manually add any changes you make to their version, or vice versa.
 
 Imagine if we had to do something like that with a codebase. The codebase for even a simple web application can be many files - it would take forever and be extremely error prone! 
 
@@ -134,17 +134,17 @@ After you figure out what features you want your classmates to build, one of the
 
 Since you're so flush with VC cash now, your first thought is to go and buy a bunch of fancy USB sticks with your company logo on them. Then, you can copy the codebase from your laptop on to each USB stick. It's a flawless idea!
 
-***How can Git and GitHub help?***
+**How can Git and GitHub help?**
 	
 USB sticks are a terrible idea.
 
-GitHub is a tool for collaborating with other developers. Don't buy USB sticks, add your classmates as collaborators on the repository in GitHub. Then, they'll be able to **clone** the repository down to their laptops and **push** their changes back up. When you need work from one of your coworkers, you can easily **pull** it.
+GitHub is a tool for collaborating with other developers. Don't buy USB sticks, add your classmates as collaborators on the repository on GitHub. Then, they'll be able to **clone** the repository down to their laptops and **push** their changes back up. When you need work from one of your coworkers, you can easily **pull** it.
 
 ### Scenario 3
 
 The deadline you set with your VC backers is fast approaching and you still have a lot of work on your app that needs to be finished. It's time to hire some contractors to help push your app over the finish line!
 
-You don't want to give the contractors privilege access to your app and you want some way to review their work before it gets merged into the final codebase. Maybe they should get the USB sticks?
+You don't want to give the contractors privileged access to your app and you want some way to review their work before it gets merged into the final codebase. Maybe they should get the USB sticks?
 
 **How can Git and GitHub help?**
 	
@@ -187,8 +187,7 @@ We need a name for our startup (and repository). Head to [Namium](http://www.nam
 In this section, we'll learn to push changes made **locally** to our **remote** repo, hosted on our GitHub account.
 
 **How to Create a Remote Repository**
-	
-Steps:
+
 1. Go to [GitHub](https://github.com)
 2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
 3. Click on the plus sign and then on "New repository" from the dropdown menu
@@ -220,17 +219,16 @@ Hi <username>! You've successfully authenticated, but GitHub does not provide sh
 If you get `Permission Denied`, get help from the support instructor and reference [this lesson](https://git.generalassemb.ly/ga-wdi-lessons/git-ssh).
 
 **How to publish to a remote repository on Github**
-	
-Steps:
+
 1. Make a new directory inside your `sandbox/` directory with the same name as your remote repository from the previous step.
 2. Create an `index.html` file and "save" it (add and commit).
-2. Ensure you have at least one commit (`git log` to verify)
-5. Follow the steps provided to add repo as a remote and push your local commits to the remote repository
+3. Ensure you have at least one commit (`git log` to verify)
+4. Follow the steps provided to add repo as a remote and push your local commits to the remote repository
   - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
   - Hint: Does the repository on your LOCAL system already exist?
-6. Open the repo on GitHub and explore the code there
-7. Make a change locally, commit it, and push it
-8. Open the repo on Github, and note that the changes have synced (you may have to refresh)
+5. Open the repo on GitHub and explore the code there
+6. Make a change locally, commit it, and push it
+7. Open the repo on Github, and note that the changes have synced (you may have to refresh)
 
 ## Break (10 min / 2:00)
 
@@ -242,7 +240,6 @@ Pair up with your neighbor or the person behind you (Only pair up with 1 other p
 
 **How to fork a repository**
 	
-Steps:
 1. Send your partner the link on GitHub to your repository (They should send you theirs)
 2. In the top right, below the plus-sign we used to create a new repository, there is a "Fork" button - click it.
 3. A modal *may* pop up with the title, "Where should we fork this repository?". If it does, click on your username.
@@ -257,7 +254,6 @@ Now that you've forked your partner's repository, you need some way to get it on
 
 **How to clone a repository**
 	
-Steps:
 1. From the repo page for the fork of your partner's repository (where we left off in the previous step), find the green button that says "Clone or Download".
 2. Copy the link by highlighting it and hitting cmd + C or clicking on the clipboard button next to the link.
 3. Open up a new terminal window and navigate to your sandbox directory
@@ -277,7 +273,6 @@ If we want to contribute our work back to the original project, we need to do so
 
 **How to make a pull request**
 	
-Steps:
 1. Push your work if you haven't already
 2. There are a couple of ways to make a new pull request:
 	- From your fork, find and click the "New pull request" button (this is the fastest/easiest). This will take you to a new page with a "Create Pull Request" button.
