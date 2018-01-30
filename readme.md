@@ -1,35 +1,25 @@
 # Intro to Git
-> Quick Links:
-> - [Link to Basic Git Command Cheatsheet](./cheatsheet.md)
-> - [Screencast: The Homework Submission Process](https://vimeo.com/167925651)
 
-## Overview
+## Learning Objectives
 
-In this lesson, we will learn the basics of using Git and see how Git is used with Github, a website for hosting and sharing code.
+- Define version control and identify what problems it solves for developers
+- Define a repository (aka repo) and identify the parts of a repo
+- Differentiate between a local repository and a remote repository
+- Synchronize a local repository with a remote repository using git with Github
 
-- Git is a wonderful tool that allows developers to collaborate
-- Git has features that give us a safety net for experimenting and writing code, without breaking already working code
+## Framing (5:00 / 0:05)
 
----
+Git is one of a couple tools that you will end up using every day as a developer. It's an essential component to development work. So what is it?
 
-## Lesson Objectives
+Git is a version control tool: it keeps track of changes across a collection of files for us. When we use Git, we can see what changes we made and seamlessly merge them with changes from our coworkers.
 
-- Define **version control** and identify what problems it solves for developers
-- Define a **repository** (aka *repo*) is, and identify what the parts of a **repo** are
-- Differentiate between a **local repository** and a **remote repository** and their workflows
-- Synchronize a **local repository** with a **remote repository** using **git** with **Github**
-
----
-
-## Version Control (10:00 - 10:20)
+## Version Control (20:00 / 0:25)
 
 Simply put, version control is a way of tracking *changes* made to a file or group of files over time.
 
-It's very likely that each of us has tried to keep track of changes made to a file by creating different versions of that file. However, many conventional ways of doing this can become messy or complicated.
+Git is a version control system (VCS). There are others, like Mercurial and SVN, but Git is the most popular and the most powerful.
 
-Let's look at some questions that hint at potential complications of having multiple or many versions of a file.
-
-### Think Pair Share
+**Think, Pair, Share**
 > 5 min exercise, 5 min review
 
 Turn to the person next to you and discuss the questions below. After 5 minutes, we'll go over responses as a class.
@@ -39,213 +29,200 @@ Turn to the person next to you and discuss the questions below. After 5 minutes,
 - How well did that strategy work? Was it painful? Can you see any limitations or problems associated with that strategy?
 - How might that approach work in a team environment?
 
-Luckily, we have a specialized tool called Git that does a much better job of tracking changes to files.
+**Follow Up**
 
-## Git (10:20 - 10:30)
+If you've worked with track changes in Microsoft Word, then you're familiar with part of what Git does. Track changes will track any changes (inserted text, deleted text, etc) to a document. It will mark those changes by highlighting them in red or green.
 
-Git is version control software; We'll be using Git in the command line via the `git` command.
+Git does this and a lot more. For example, if you are your coworker are writing a memo Word and using track changes, how do you keep track of which version is the final version (yours or your coworker's)? One common solution to this is to make a copy of the memo and add your initials to the file name, along with the date and time so you can keep track of different versions of the memo. Someone then has to manually add any changes you make to their version, or vice versa.
 
-### Common Problems that Git Solves
+Imagine if we had to do something like that with a codebase. The codebase for even a simple web application can be many files - it would take forever and be extremely error prone! 
 
-- I wrote some code to implement a feature, but I broke a bunch of stuff in the process.
-**I want to be able to go back in time to a point where my code works!**
+This is the problem Git solves for developers.
 
-- I'm trying to see how my codebase or some files have changed over time.
-**I'd like to be able to compare various states of my files.**
+Here's a short list of things you can do with Git:
+- track changes to a set of files over time (version control)
+- save your work with descriptive save messages (commits)
+- track multiple versions and histories of the same codebase (branching)
 
-- I want to work on someone else's project, but don't want to break their code and ruin everything.
-**I want to have my own "area" where I can try out code or build out a feature without adversely affecting another developer's work.**
+## How To Work with Git (10:00 / 0:35)
 
-- I'm working on a project with a team, and **I want to have an easy way to collaborate with my team.**
+The basics of working with Git could be somewhat familiar to you. Git works inside of a **repository**: a folder where Git is watching and tracking changes to files. When we want to take some changes we've made and "save" our progress so far, we do so by **staging** those changes and **committing** them.
 
-### How Git Works
+A **repository** is like a special kind of filing cabinet that stores a bunch of snapshots of a project taken at different points the project's development. It contains all of a project's **branches**, each of which are composed of **commits** representing individual changes to a project over time. As such, a **repository** encompasses all of the different versions of a project and their development histories.
 
-- With Git, we can create "save-points" called **commits** that, collectively, track the version of our project at a given point in time.
+"Saving" our work with Git involves two steps: staging some changes and the committing them. Each commit is like a "save-point" that, collectively, track the version of our project at a given point in time. Each commit has a commit message that describes the changes made to a file or group of files. Commits get stored together in a repository.
 
-- A **commit** records a set of related *changes* made to a project. Each **commit** has a **commit message** that describes the changes made to a file or group of files. **Commits** get stored together in a **repository**.
+For every feature you add, even a very small one, you should make a commit. If you go an hour without committing, it's usually best to go ahead and commit what you have gotten to work in the last hour. Your mileage may vary, but it's probably best to commit ever 20-45 minutes.
 
-- For every feature you add, even a very small one, you should make a **commit**. If you go an hour without committing, it's usually best to go ahead and commit what you have gotten to work in the last hour.
-> **Commit Early, Commit Often!**
+**Commit Early, Commit Often!**
 
-- At any given time, we can go back to the version of our project at any given **commit**. This ability gives us a lot of room to experiment. It's *absolutely essential* to have this kind of safety net as a developer!
+At any given time, we can go back to the version of our project at any given **commit**. This ability gives us a lot of room to experiment. It's *absolutely essential* to have this kind of safety net as a developer!
 
-- When collaborating on a project with other developers, Git gives us tools to create our own "area" for writing code, within that project. This "area" is called a **branch**. A **branch** is a sequence of commits that represents a version of our project. All Git repositories start with at least one branch (`master`).
+When collaborating on a project with other developers, Git gives us tools to create our own "area" for writing code, within that project. This "area" is called a **branch**. A **branch** is a sequence of commits that represents a version of our project. All Git repositories start with at least one branch (`master`).
 
-- Use cases for creating separate **branches** would include implementing a new feature, refactoring (re-writing) working code, or to develop different variations of a project. We'll cover **branching** in-depth with the next lesson on Git.
+### Exercise 1: Creating a Repository and Committing - We Do (0:05 / 0:40)
 
-
-## The Git Repository (Repo) (10:30 - 11:10)
-
-At its top-most level, Git tracks changes to a project via a **repository**. A **repository** is like a special kind of filing cabinet that stores a bunch of snapshots of a project taken at different points the project's development. It contains all of a project's **branches**, each of which are composed of **commits** representing individual changes to a project over time. As such, a **repository** encompasses all of the different versions of a project and their development histories.
-
-**Repositories** are highly "aware" of changes made within them; they can detect when files have been added or modified.
-
-We're used to thinking about files stored on the computer in terms of files and folders. Our projects, and actually all files on a computer are contained in structures called ***file trees***.
-
-  - What changes are our **repos** tracking?
-  - How are these changes recorded?
-  - What is a **repo** "made out of"?
-
-
-### Terminology
-
-* **commit** - a snapshot of changes made to the working tree at a given time (along with a message explaining what changed)
-* **the index** - also called the **staging area**; where we add changes we want committed to the git repository
-* **HEAD** - the commit that is currently "checked out" in the repo
-  * by default, this will be most recent commit on the current branch
-* **status** - what files have changed and whether or not these changes are "staged" (have been added to **the index**)
-  * try typing `git status` within a directory containing a repository
-
-### Anatomy of a Repo: Commits and Repositories
-
-When we create save-point or a commit, we're saving changes to our project's **file tree** since the last commit. A repo is made up of commits, just as a filing cabinet is made up of files.
-
-![Git Local Diagram](/images/git-local.jpg)
-
-- Repo is made out of commits
-- The staging area (also called the index) is where we add files to be committed. This allows us to group together related changes.
-  - `git add <filename>`
-- After we have added our file(s) to the staging area, we can commit them with `git commit -m "<commit message>"` This is the step that actually creates the save-point or **commit**
--  If we check out a previous commit, we are moving the **HEAD** to that commit. This also happens when we check out a **branch**, which we will cover in a follow-up lesson.
-
-### The Staging Area
-
-You must call `git add` every time you alter a file to send the changes made to that file to the **staging area** (index).
-
-The **staging area** is one of Git's more unique features, and it can take some time to wrap your head around it. It helps to think of the **staging area** as a buffer between the working directory and the project history.
-
-> [Why stage files?](http://gitolite.com/uses-of-index.html)
-
-Instead of automatically committing all of the changes you've made since the last commit, the **staging area** lets you group *related changes* into highly focused snapshots before actually committing to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece. If you change 3 files to implement a certain feature, or fix a certain bug, you'd add those 3 files to the staging area:
- ```
- git add <file1> <file2> <file3>
- ```
- Then a commit with a description of the related changes:
-```
-git commit -m "fixes bug <where thing does not work>"
-```
-```
-git commit -m "adds <some> feature"
-```
-
-### Exercise 1: Create a Repository and Committing Locally - We Do
-> 5 min exercise
-
-1. Create a new `sample_portfolio` folder in sandbox directory.
+1. Create a new `sample_portfolio` folder in your sandbox directory.
 2. Change your working directory to `sample_portfolio`.
-  - ```cd sample_portfolio```
-3. Initialize a git repository in the `sample_portfolio` folder.
-  - ```git init```
+3. Initialize a git repository in the `sample_portfolio` folder. (`git init`)
 4. Create a `index.html` file and write anything in it.
-  - save it!
 5. Add `index.html` to the staging area and then make a commit.
 
 [What makes a great commit message?](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 
-### Exercise 1.5: More Commits / History - You Do
-> 5 min exercise
+### What did we just do? (10:00 / 0:50)
 
-1. Modify `index.html` and create a new `style.css` file and add something to it.
-1. Add both files to the staging area and create a create a new commit, with an appropriate message.
-1. Repeat previous step (committing) but this time, change two files.
+We've now created a new Git repository, done some work on a project and saved that work with Git! Let's recap:
+
+**Creating a New Repo:**
+
+The command for creating a new repo is `git init` (to *initialize* a new repo. This command creates a `.git` directory where Git will track and manages all the changes to the files in this directory.
+
+You want to be careful where you run `git init`. You only want to run that command in a folder where you want to create a new repository. If you accidentally run it somewhere else, can you delete the repository by removing the `.git` directory (using `rm -rf`).
+
+**Saving Our Work:**
+
+Saving our work in Git requires two steps: Adding changes to the **staging area** and then **committing** those changes.
+
+The **staging area** is one of Git's more unique features, and it can take some time to wrap your head around it. It helps to think of the **staging area** as a buffer between the working directory and the project history.
+ 
+> [Why stage files?](http://gitolite.com/uses-of-index.html)
+
+Instead of automatically committing all of the changes you've made since the last commit, the **staging area** lets you group *related changes* into highly focused snapshots before actually committing to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece
+
+Here's another way to think about it: 
+
+![Git Local Diagram](/images/git-local.jpg)
+
+### Exercise 1.5: More Commits / History - You Do (0:05 / 0:55)
+
+1. Modify `index.html`
+1. Add your changes to the staging area and create a new commit with an appropriate message.
+1. Create a new html file and stage and commit.
 1. View the **commit history** by running `git log` to see the log of commits, and what changed each commit changed.
 
 > TROUBLESHOOTING: If you've initialized the git repository in your sandbox directory instead of the resume folder, try running:
 >
 > `rm -rf .git`
 >
-> MAKE SURE YOU DONT FORGET `.git` IF YOU DO THIS
+> MAKE SURE YOU DON'T FORGET `.git` IF YOU DO THIS
 
+## Break (10 min / 1:05)
 
-## Break (10 min)
+## Using Git to Work with Others (0:20 / 1:25)
 
-## Local vs. Remote Repositories (11:20 - 12:00)
+Git works really well as a version control tool but where it really shines is as a tool for collaboration (in combination with GitHub).
 
-In the last exercise, we were working locally, on files stored our hard drives. Very often, we are going to want to push the changes we have made to a **remote repository**. For example, when we submit WDI homework or want to share our code with our colleagues. We're going to take an in-depth look at local and remote workflows.
+For the next couple of minutes, we're going to walk through a couple of scenarios and explain how Git and GitHub can help solve these scenarios.
 
-### Git Local Workflow
+**Scenario 1**
 
-Working on a project with git revolves around the basic **edit/stage/commit** pattern.
+You have this awesome app idea, one that will definitely take off and become one of those "unicorn" apps worth billions and billions. You jump straight in to development and start working on the MVP on your laptop. You work through the night and get really far on your MVP, maybe 85% complete.
 
-#### Summary
-
-1. Edit your files in the **working directory** and save them in your text editor.
-2. Use `git add <file1> <file2>` to add them to the **staging area**.
-3. Use `git commit -m "descriptive message"` to make a **commit** of the staged changes and store them in the **repo**.
-4. Lather. Rinse. Repeat.
-
-
-### Remote Repositories and Github
-
-So far we've been doing everything on our own machine, or **locally**. However, we can also host repositories online as well, as **remote repositories**. By using **remote repositories**, we can safely backup our local development and more easily collaborate with other developers.
-
-#### Documentation Dive Exercise
-> 10 min exercise / 10 min review
-
-Documentation takes time to be able to read, it's not easy at first to be able to extract what you need to know. Documentation can vary in readability; some documentation will be particularly difficult to read through for beginners. But with this exercise, we'll get some early practice.
-
-##### Instructions:
-
-1.  Pair with a partner and spend 10 minutes to do research on the terms using one or a mix of the methods listed below.
-2. Afterwards, we'll spend a few minutes discussing our findings.
-
-**Option 1** - Run `git help` in your terminal to output a glossary.
-
-**Option 2** - Look over this [Github Glossary](https://help.github.com/articles/github-glossary/).
-
-**Option 3** - Google all the terms / find your own documentation.
-
-##### Key Terms to Define
-- **remote**
-- **Github**
-- **clone**  
-- **fetch**
-- **merge**  
-- **pull**   
-- **push**   
-- **merge conflict**
+The next morning, you hop on your bike to come in to class so you can show your classmates and get their feedback. But on your bike ride in, you slip and fall! You are totally fine and uninjured. But you didn't realize your backpack was open and when you fell your laptop slide out, straight down a sewer drain! What can you do? You call 311 and the person on the phone tells you they don't respond to lost item calls. 
 
 <details>
-  <summary>
-  Answer Key
-  </summary>
-  <ul>
-    <li> remote - another (non-local) repository that can be synchronized with your local one
-    </li>
-    <li> Github - a service that hosts Git remote repositories, and provides a web app to interact / collaborate on them
-    </li>
-    <li> clone - download an entire remote repository, to be used as a local repository
-    </li>
-    <li> fetch - downloading the set of changes (commits) from a remote repository
-    </li>
-    <li> merge - taking two histories (sequences of commits), and combining them together
-    </li>
-    <li> pull - fetching changes and merging them into the current branch (a combo of `git fetch` and `git merge`)
-    </li>
-    <li> push - sending changes to a remote repository and merging them into the specified branch
-    </li>
-    <li> merge conflict - when two commits conflict with one another during a merge (when they both modify the same line of code, typically)
-    </li>
-  </ul>
+	<summary> How can Git and GitHub help?</summary>
+	
+	GitHub compliments Git by managing **remote** versions of a repository (a version stored in the "cloud"). You can create a remote repository in GitHub, connect the remote with your **local** version and then **push** changes from your local repository to your remote repository.
+
 </details>
 
-### Creating your own remote repo
+**Scenario 2**
+Your friend lends you their laptop and you completely rebuild your MVP from scratch. This time however, you create a remote repository in GitHub to save your work there. 
+
+You finish your MVP and go talk to a bunch of investors. One of them gives you a million dollars to finish building it out! 🤑 You decide hire all your WDI classmates to help you finish the app and take it to market.
+
+After you figure out what features you want your classmates to build, one of them asks how they can start working on the codebase. You have the code on your laptop and on GitHub. How can your classmate (now coworker) get the code?
+
+Since you're so flush with VC cash now, your first thought is to go and buy a bunch of fancy USB sticks with your company logo on them. Then, you can copy the codebase from your laptop on to each USB stick. It's a flawless idea!
+
+<details>
+	<summary> How can Git and GitHub help?</summary>
+	
+	USB sticks are a terrible idea.
+	
+	GitHub is a tool for collaborating with other developers. Don't buy USB sticks, add your classmates as collaborators on the repository in GitHub. Then, they'll be able to **clone** the repository down to their laptops and **push** their changes back up. When you need work from one of your coworkers, you can easily **pull** it.
+	
+</details>
+
+**Scenario 3**
+
+The deadline you set with your VC backers is fast approaching and you still have a lot of work on your app that needs to be finished. It's time to hire some contractors to help push your app over the finish line!
+
+You don't want to give the contractors privilege access to your app and you want some way to review their work before it gets merged into the final codebase. Maybe they should get the USB sticks?
+
+<details>
+	<summary> How can Git and GitHub help?</summary>
+	
+	USB sticks are still a terrible idea.
+	
+	GitHub works well for all kinds of collaboration. Later in the course, we'll have an entire class dedicated to different collaboration workflows with GitHub.
+	
+	What you want is for your contractors to **fork** your repository on GitHub: make a copy of the codebase that they own and control. They can make all the changes they need to, then ask for their work to be merged back into the original repository by making a **pull request**. You or one of your coworkers can review their pull request and **merge** it if everything looks good.
+
+</details>
+
+**Scenario 4**
+
+Your contractors have made their forks and are off finishing their work. You can now finally finish the feature you need to build.
+
+You finish it up, push it to GitHub and then throw your hands up in the air. Eureka! Your'e finished. Time for a celebratory cup of coffee.
+
+On your way to the gourmet coffee bar you bought with all that VC cash, you get a call from one of the contractors. They need the work you just finished to make sure that their code works with yours.
+
+They don't want it on a USB stick. 
+
+<details>
+	<summary> How can Git and GitHub help?</summary>
+	
+	When your contractors fork the repository, they'll have a remote copy under their GitHub. They can clone that down and have a local and remote version of the repository of their own: their local is the copy on their laptop, their remote is the copy under their GitHub account (their fork).
+	
+	Your recent work, however, is in the original repository. The original repository is the **upstream** repository for you contractors. You can set multiple remotes for a local repository, provided they are based off the same original repository. So your contractors just have to set the original repository as the upstream repository for their local repository and they'll be able to pull changes from it (but not push changes to it).
+
+</details>
+
+**Conclusion**
+
+Your contractors finish up their work and you merge all their pull requests. You deploy the app and send the link to your investors.
+
+Your investors are totally blown away by all the hard work you put in to building the app, congratulations!
+
+## We Do: Git and GitHub (5:00 / 1:25)
+
+We need a name for our startup (and repository). Head to [Namium](http://www.naminum.com/random) for some randomly generated startup names.
+
+### Creating your own remote repo (10:00 / 1:35)
+
+> This relates to **Scenario 1** from above
 
 In this section, we'll learn to push changes made **locally** to our **remote** repo, hosted on our GitHub account.
 
-![Git Process Diagram](/images/git07.jpg)
+<details>
+	<summary>How to Create a Remote Repository</summary>
+	
+	**Steps:**
+	1. Go to [GitHub](https://github.com)
+	2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
+	3. Click on the plus sign and then on "New repository" from the dropdown menu
+	4. Fill in the form for creating a new repo
+		- You'll want to give it a name (something descriptive and memorable)
+		- You'll generally want to keep the code public (especially for homework, labs and projects so your instructors can grade them)
+		- You want to leave the checkbox that says "Initialize this repository with a README" **unchecked**
+	5. Hit the "Create repository" button
+</details>
 
-### Exercise 2: Publish to a remote repository on Github
-> 20 min exercise / 10 min review
+### Exercise 2: Publish to a remote repository on Github (15:00 / 1:50)
+
+> This relates to **Scenario 1** from above
 
 The first step is to make sure you have SSH keys set up with GitHub so you don't have to type your password each time you want to push code. Generally speaking, SSH keys allows you to connect to a server without remembering a password.
 
-To check whether you have SSH access set up with GitHub / GHE, run these two commands:
-```
-ssh -T git@github.com
-```
-```
-ssh -T git@git.generalassemb.ly
+To check whether you have SSH access set up with GitHub / GHE, run these two commands (don't include the `$`):
+
+```sh
+$ ssh -T git@github.com
+$ ssh -T git@git.generalassemb.ly
 ```
 
 If you are already set up, you should see a response like:
@@ -254,80 +231,83 @@ If you are already set up, you should see a response like:
 Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-If you get `Permission Denied`, please reference [this lesson](https://git.generalassemb.ly/ga-wdi-lessons/git-ssh) and take a few minutes to set up SSH access for GitHub.
-> NOTE: Once you have finished setting up GitHub, set up you account on `git.generalassemb.ly` (GHE) in the same way
+If you get `Permission Denied`, get help from the support instructor and reference [this lesson](https://git.generalassemb.ly/ga-wdi-lessons/git-ssh).
 
-Once you've configured your SSH Keys with both Github and GHE:
+<details>
+	<summary>How to publish to a remote repository on Github</summary>
+	
+	**Steps:**
+	1. Make a new directory inside your `sandbox/` directory with the same name as your remote repository from the previous step.
+	2. Create an `index.html` file and "save" it (add and commit).
+	2. Ensure you have at least one commit (`git log` to verify)
+	5. Follow the steps provided to add repo as a remote and push your local commits to the remote repository
+	  - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
+	  - Hint: Does the repository on your LOCAL system already exist?
+	6. Open the repo on GitHub and explore the code there
+	7. Make a change locally, commit it, and push it
+	8. Open the repo on Github, and note that the changes have synced (you may have to refresh)
+</details>
 
-1. Make sure you are in the `sample_portfolio` directory and you have no uncommitted changes (`git status`)
-2. Ensure you have at least one commit (`git log` to verify)
-3. Create a Github repo on GHE
-  - To create a repo, click on the '+' at the top right of your Github profile
-4. Give the repo a name and description, and ensure it's public
-  - Don't worry about the other selections
-5. Follow the steps provided to add repo as a remote and push your local commits to the remote repository
-  - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
-  - Hint: Does the repository on your LOCAL system already exist?
-6. Open the repo on GHE, and explore the code there
-7. Make a change locally, commit it, and push it
-8. Open the repo on Github, and note that the changes have synced
+## Break (10 min / 2:00)
 
-## Forking & Pull Requests (12:00 - 12:30)
+### Forking (10:00 / 2:10)
 
-### Terms and Concepts (Forking and Pull Requests)
+> This relates to **Scenario 3** from above and is generally how you will submit your homework
 
-- **fork** - make a copy of a repo on Github under a different account, used for open-source software (OSS) collaboration
-  - **This happens only once**
-- **cloning** - download a copy of a remote repo locally onto your machine
-  - **This too, happens only once**
-- **push** - send changes (commits) made on a local repo to its remote counterpart
-- **pull request** - a Github feature which allows a user to suggest and discuss changes to a repo based on changes present in their forked version of the project
+Pair up with your neighbor or the person behind you (Only pair up with 1 other person. If there is an odd number of students, someone can pair up with the instructor as a demo).
 
-### Below is a step by step illustration of how the forking and cloning process works.
+<details>
+	<summary>How to fork a repository</summary>
+	
+	**Steps:**
+	1. Send your partner the link on GitHub to your repository (They should send you theirs)
+	2. In the top right, below the plus-sign we used to create a new repository, there is a "Fork" button - click it.
+	3. A modal *may* pop up with the title, "Where should we fork this repository?". If it does, click on your username.
+	4. If everything works, you'll see a screen that has a book with a fork in it being scanned.
+	5. You'll then be went to a page that looks like the one you were just on for your own repo. Take a close look at the heading in the top left: it should have your username and then the name of the repository and underneath that something like, "forked from <your_partners_uesername>/<the_name_of_the_repo>"
+</details>
 
-##### 1. A Remote Repo (Our HW in this case)
-![Git Process Diagram](/images/git01.jpg)
-##### 2. Forking the Repo to our Github account
-![Git Process Diagram](/images/git02.jpg)
-##### 3. Cloning to our Local Machine
-![Git Process Diagram](/images/git03.jpg)
-##### 4. Pushing to a Remote, the Forked Repo on our GH account
-![Git Process Diagram](/images/git04.jpg)
-##### 5. Creating a Pull Request and Pulling Changes from the original source repo
-![Git Process Diagram](/images/git06.jpg)
+### Cloning (10:00 / 2:20)
 
-##### GIF Recap
-![Git Process Diagram](/images/git.gif)
+> This relates to **Scenario 3** from above and is generally how you will submit your homework
 
-## Bonus Material
+Now that you've forked your partner's repository, you need some way to get it on to your computer (locally). This process is called **cloning**
 
-Anyone missing the git branch `(master)` in their bash prompt?
+<details>
+	<summary>How to clone a repository</summary>
+	
+	**Steps:**
+	1. From the repo page for the fork of your partner's repository (where we left off in the previous step), find the green button that says "Clone or Download".
+	2. Copy the link by highlighting it and hitting cmd + C or clicking on the clipboard button next to the link.
+	3. Open up a new terminal window and navigate to your sandbox directory
+	4. The command to clone a repository with git is `git clone <url_for_the_repo_you_want_to_clone>`. You can optionally pass in a name for the repository if you would like to name the working directory when you clone - don't worry about that right now though.
+	5. Change in to your new directory and run `git log` to see the commit history.
+	6. Run `git remote -v`. What do you get back? What is interesting about these links?
+</details>
 
-https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash
+### Pull Requests (10:00 / 2:30
 
-Check out the Pro Git book - available for free online! https://git-scm.com/book/en/v2
+> This relates to **Scenario 3** from above and is generally how you will submit your homework
 
-### Bonus Exercise 3: Reset your work
-What if you staged some work and realize you don't want that saved? Or, what if you've gone even further and committed something, but want to revert back to the last commit?
+Now that you've cloned your partner's repo, go a head and make a change to what ever file(s) they have. Stage and commit your work and then push it to the remote.
 
-1. make a few changes to your resume.txt file
-2. stage those files, but do NOT commit
-3. check your ```git status```
-4. try reverting that file back to before it was staged, what happens when you run ```git status``` again?
-  * ```git reset head```
-5. make a new change to your resume.txt file, and this time ```add``` and ```commit``` it
-6. can you still revert with the same command?
-7. try ```git reset head^```
-  * ***note, be VERY careful when reseting! you cannot undo if you go back a commit***
-  - this will return the changes you made to be untracked
-8. to completely undo the changes, run ```git checkout -- resume.txt``` after ```git reset head^```
+Where did we just push our changes to, our partner's repository on GitHub or our own?
 
-### More Practice with Git: Git challenge exercise - Tutorial
+If we want to contribute our work back to the original project, we need to do so with a **pull request**
 
-1. Navigate to the [Git Challenege](https://try.github.io/levels/1/challenges/1)
-2. Complete all exercises.
+<details>
+	<summary>How to make a pull request</summary>
+	
+	**Steps:**
+	1. Push your work if you haven't already
+	2. There are a couple of ways to make a new pull request:
+		- From your fork, find and click the "New pull request" button (this is the fastest/easiest). This will take you to a new page with a "Create Pull Request" button.
+		- From the original repository, click on the Pull requests tab and then click the New Pull Request button. Click on the "compare across forks" link, find your fork in the 3rd dropdown. Then click the "Create Pull Request" button.
+	3. Give your pull request a title and a description. If this is a homework assignment, you should add your comfort level and completeness in the description and the title should include your full name.
 
-### Closing
+</details>
+
+## Closing
 
 - Why is version control important for developers?
 - What problems do we anticipate using git / github?
@@ -339,7 +319,6 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 1. What are the main components of a git repository and how do they relate?
 2. Describe the steps of the process for contributing to open source software on
    Github (the same as our homework submission process).
-
 
 ## Homework
 
@@ -356,15 +335,16 @@ completeness: 5
 Optional but highly recommended!
 
 ## Resources
+
+* [Become a Git Guru](https://www.atlassian.com/git/tutorials)
+* [What makes a great commit message?](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 * [Interactive Git Cheetsheet](http://ndpsoftware.com/git-cheatsheet.html)
-* [Syncing with Git](https://www.atlassian.com/git/tutorials/syncing/)
 * [Github Guides](https://guides.github.com)
 * [Github Training](https://training.github.com/kit/)
 * [Git Immersion - Interactive Course](http://gitimmersion.com/lab_05.html)
 * [Pro Git](http://git-scm.com/book/en/v2) - An in-depth free PDF book for those wanting to understand git deeper
 * [GitUp - Interactive Commit Visualizer](http://gitup.co)
 * [Practice with Git](https://github.com/grayghostvisuals/practice-git)
-
 
 ## Appendix - Git CLI Commands
 
@@ -405,11 +385,70 @@ Once linked, you can just run `git push` to push master branch to master branch
   * Same rules apply as `git pull` above.
 
 
-### [Screencast: The Homework Submission Process](https://vimeo.com/167925651)
 
 
-### Optional Bonus assignments:
-* Create a blog site using jekyll (hosted using a separate repo at **your_github_username*.github.io/blog, this is called a 'project' rep)
-* Register for a custom domain name (usually $6 - $10 a year), and associate it with your github project site
 
-You'll find instructions that will help at the bottom of the [github pages guide](https://pages.github.com).**
+
+
+
+
+
+
+
+
+
+
+
+
+#### Documentation Deep Dive (15:00 / 1:40)
+> 10 min exercise / 5 min review
+
+Documentation takes time to be able to read, it's not easy at first to be able to extract what you need to know. Documentation can vary in readability; some documentation will be particularly difficult to read through for beginners. But with this exercise, we'll get some early practice.
+
+**Instructions:**
+
+1. Pair with a partner and spend 10 minutes researching the terms listed below using one or a mix of the options listed below
+2. We suggest researching each term together rather than splitting them up
+3. Afterwards, we'll spend a few minutes discussing your findings
+
+**Options:**
+
+1. Run `git help` in your terminal to output a glossary.
+2. Look over this [Github Glossary](https://help.github.com/articles/github-glossary/).
+3. Google all the terms / find your own documentation.
+
+**Terms:**
+
+- remote
+- Github
+- clone
+- fetch
+- merge
+- pull
+- push
+- merge conflict
+
+<details>
+  <summary>
+  Answer Key
+  </summary>
+  <ul>
+    <li> remote - another (non-local) repository that can be synchronized with your local one
+    </li>
+    <li> Github - a service that hosts Git repositories and provides a web app to interact / collaborate on them
+    </li>
+    <li> clone - download an entire remote repository, to be used as a local repository
+    </li>
+    <li> fetch - download the most recent changes (commits) from a remote repository
+    </li>
+    <li> merge - taking two histories (sequences of commits), and combining them together
+    </li>
+    <li> pull - fetching changes and merging them into the current branch (a combo of `git fetch` and `git merge`)
+    </li>
+    <li> push - sending changes (commits) to a remote repository and merging them into a specified branch
+    </li>
+    <li> merge conflict - when two commits conflict with one another during a merge (when they both modify the same line of code, typically)
+    </li>
+  </ul>
+</details>
+
