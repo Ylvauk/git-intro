@@ -6,6 +6,7 @@
 - Define a repository (aka repo) and identify the parts of a repo
 - Differentiate between a local repository and a remote repository
 - Synchronize a local repository with a remote repository using git with Github
+- Describe forking and making a pull request
 
 ## Framing (5:00 / 0:05)
 
