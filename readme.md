@@ -115,20 +115,17 @@ Git works really well as a version control tool but where it really shines is as
 
 For the next couple of minutes, we're going to walk through a couple of scenarios and explain how Git and GitHub can help solve these scenarios.
 
-**Scenario 1**
+### Scenario 1
 
 You have this awesome app idea, one that will definitely take off and become one of those "unicorn" apps worth billions and billions. You jump straight in to development and start working on the MVP on your laptop. You work through the night and get really far on your MVP, maybe 85% complete.
 
 The next morning, you hop on your bike to come in to class so you can show your classmates and get their feedback. But on your bike ride in, you slip and fall! You are totally fine and uninjured. But you didn't realize your backpack was open and when you fell your laptop slide out, straight down a sewer drain! What can you do? You call 311 and the person on the phone tells you they don't respond to lost item calls. 
 
-<details>
-	<summary> How can Git and GitHub help?</summary>
+**How can Git and GitHub help?**
 	
-	GitHub compliments Git by managing **remote** versions of a repository (a version stored in the "cloud"). You can create a remote repository in GitHub, connect the remote with your **local** version and then **push** changes from your local repository to your remote repository.
+GitHub compliments Git by managing **remote** versions of a repository (a version stored in the "cloud"). You can create a remote repository in GitHub, connect the remote with your **local** version and then **push** changes from your local repository to your remote repository.
 
-</details>
-
-**Scenario 2**
+### Scenario 2
 Your friend lends you their laptop and you completely rebuild your MVP from scratch. This time however, you create a remote repository in GitHub to save your work there. 
 
 You finish your MVP and go talk to a bunch of investors. One of them gives you a million dollars to finish building it out! 🤑 You decide hire all your WDI classmates to help you finish the app and take it to market.
@@ -137,33 +134,27 @@ After you figure out what features you want your classmates to build, one of the
 
 Since you're so flush with VC cash now, your first thought is to go and buy a bunch of fancy USB sticks with your company logo on them. Then, you can copy the codebase from your laptop on to each USB stick. It's a flawless idea!
 
-<details>
-	<summary> How can Git and GitHub help?</summary>
+***How can Git and GitHub help?***
 	
-	USB sticks are a terrible idea.
-	
-	GitHub is a tool for collaborating with other developers. Don't buy USB sticks, add your classmates as collaborators on the repository in GitHub. Then, they'll be able to **clone** the repository down to their laptops and **push** their changes back up. When you need work from one of your coworkers, you can easily **pull** it.
-	
-</details>
+USB sticks are a terrible idea.
 
-**Scenario 3**
+GitHub is a tool for collaborating with other developers. Don't buy USB sticks, add your classmates as collaborators on the repository in GitHub. Then, they'll be able to **clone** the repository down to their laptops and **push** their changes back up. When you need work from one of your coworkers, you can easily **pull** it.
+
+### Scenario 3
 
 The deadline you set with your VC backers is fast approaching and you still have a lot of work on your app that needs to be finished. It's time to hire some contractors to help push your app over the finish line!
 
 You don't want to give the contractors privilege access to your app and you want some way to review their work before it gets merged into the final codebase. Maybe they should get the USB sticks?
 
-<details>
-	<summary> How can Git and GitHub help?</summary>
+**How can Git and GitHub help?**
 	
-	USB sticks are still a terrible idea.
-	
-	GitHub works well for all kinds of collaboration. Later in the course, we'll have an entire class dedicated to different collaboration workflows with GitHub.
-	
-	What you want is for your contractors to **fork** your repository on GitHub: make a copy of the codebase that they own and control. They can make all the changes they need to, then ask for their work to be merged back into the original repository by making a **pull request**. You or one of your coworkers can review their pull request and **merge** it if everything looks good.
+USB sticks are still a terrible idea.
 
-</details>
+GitHub works well for all kinds of collaboration. Later in the course, we'll have an entire class dedicated to different collaboration workflows with GitHub.
 
-**Scenario 4**
+What you want is for your contractors to **fork** your repository on GitHub: make a copy of the codebase that they own and control. They can make all the changes they need to, then ask for their work to be merged back into the original repository by making a **pull request**. You or one of your coworkers can review their pull request and **merge** it if everything looks good.
+
+### Scenario 4
 
 Your contractors have made their forks and are off finishing their work. You can now finally finish the feature you need to build.
 
@@ -173,16 +164,13 @@ On your way to the gourmet coffee bar you bought with all that VC cash, you get 
 
 They don't want it on a USB stick. 
 
-<details>
-	<summary> How can Git and GitHub help?</summary>
+**How can Git and GitHub help?**
 	
-	When your contractors fork the repository, they'll have a remote copy under their GitHub. They can clone that down and have a local and remote version of the repository of their own: their local is the copy on their laptop, their remote is the copy under their GitHub account (their fork).
-	
-	Your recent work, however, is in the original repository. The original repository is the **upstream** repository for you contractors. You can set multiple remotes for a local repository, provided they are based off the same original repository. So your contractors just have to set the original repository as the upstream repository for their local repository and they'll be able to pull changes from it (but not push changes to it).
+When your contractors fork the repository, they'll have a remote copy under their GitHub. They can clone that down and have a local and remote version of the repository of their own: their local is the copy on their laptop, their remote is the copy under their GitHub account (their fork).
 
-</details>
+Your recent work, however, is in the original repository. The original repository is the **upstream** repository for you contractors. You can set multiple remotes for a local repository, provided they are based off the same original repository. So your contractors just have to set the original repository as the upstream repository for their local repository and they'll be able to pull changes from it (but not push changes to it).
 
-**Conclusion**
+### Conclusion
 
 Your contractors finish up their work and you merge all their pull requests. You deploy the app and send the link to your investors.
 
@@ -198,19 +186,17 @@ We need a name for our startup (and repository). Head to [Namium](http://www.nam
 
 In this section, we'll learn to push changes made **locally** to our **remote** repo, hosted on our GitHub account.
 
-<details>
-	<summary>How to Create a Remote Repository</summary>
+**How to Create a Remote Repository**
 	
-	**Steps:**
-	1. Go to [GitHub](https://github.com)
-	2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
-	3. Click on the plus sign and then on "New repository" from the dropdown menu
-	4. Fill in the form for creating a new repo
-		- You'll want to give it a name (something descriptive and memorable)
-		- You'll generally want to keep the code public (especially for homework, labs and projects so your instructors can grade them)
-		- You want to leave the checkbox that says "Initialize this repository with a README" **unchecked**
-	5. Hit the "Create repository" button
-</details>
+Steps:
+1. Go to [GitHub](https://github.com)
+2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
+3. Click on the plus sign and then on "New repository" from the dropdown menu
+4. Fill in the form for creating a new repo
+	- You'll want to give it a name (something descriptive and memorable)
+	- You'll generally want to keep the code public (especially for homework, labs and projects so your instructors can grade them)
+	- You want to leave the checkbox that says "Initialize this repository with a README" **unchecked**
+5. Hit the "Create repository" button
 
 ### Exercise 2: Publish to a remote repository on Github (15:00 / 1:50)
 
@@ -233,20 +219,18 @@ Hi <username>! You've successfully authenticated, but GitHub does not provide sh
 
 If you get `Permission Denied`, get help from the support instructor and reference [this lesson](https://git.generalassemb.ly/ga-wdi-lessons/git-ssh).
 
-<details>
-	<summary>How to publish to a remote repository on Github</summary>
+**How to publish to a remote repository on Github**
 	
-	**Steps:**
-	1. Make a new directory inside your `sandbox/` directory with the same name as your remote repository from the previous step.
-	2. Create an `index.html` file and "save" it (add and commit).
-	2. Ensure you have at least one commit (`git log` to verify)
-	5. Follow the steps provided to add repo as a remote and push your local commits to the remote repository
-	  - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
-	  - Hint: Does the repository on your LOCAL system already exist?
-	6. Open the repo on GitHub and explore the code there
-	7. Make a change locally, commit it, and push it
-	8. Open the repo on Github, and note that the changes have synced (you may have to refresh)
-</details>
+Steps:
+1. Make a new directory inside your `sandbox/` directory with the same name as your remote repository from the previous step.
+2. Create an `index.html` file and "save" it (add and commit).
+2. Ensure you have at least one commit (`git log` to verify)
+5. Follow the steps provided to add repo as a remote and push your local commits to the remote repository
+  - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
+  - Hint: Does the repository on your LOCAL system already exist?
+6. Open the repo on GitHub and explore the code there
+7. Make a change locally, commit it, and push it
+8. Open the repo on Github, and note that the changes have synced (you may have to refresh)
 
 ## Break (10 min / 2:00)
 
@@ -256,16 +240,14 @@ If you get `Permission Denied`, get help from the support instructor and referen
 
 Pair up with your neighbor or the person behind you (Only pair up with 1 other person. If there is an odd number of students, someone can pair up with the instructor as a demo).
 
-<details>
-	<summary>How to fork a repository</summary>
+**How to fork a repository**
 	
-	**Steps:**
-	1. Send your partner the link on GitHub to your repository (They should send you theirs)
-	2. In the top right, below the plus-sign we used to create a new repository, there is a "Fork" button - click it.
-	3. A modal *may* pop up with the title, "Where should we fork this repository?". If it does, click on your username.
-	4. If everything works, you'll see a screen that has a book with a fork in it being scanned.
-	5. You'll then be went to a page that looks like the one you were just on for your own repo. Take a close look at the heading in the top left: it should have your username and then the name of the repository and underneath that something like, "forked from <your_partners_uesername>/<the_name_of_the_repo>"
-</details>
+Steps:
+1. Send your partner the link on GitHub to your repository (They should send you theirs)
+2. In the top right, below the plus-sign we used to create a new repository, there is a "Fork" button - click it.
+3. A modal *may* pop up with the title, "Where should we fork this repository?". If it does, click on your username.
+4. If everything works, you'll see a screen that has a book with a fork in it being scanned.
+5. You'll then be went to a page that looks like the one you were just on for your own repo. Take a close look at the heading in the top left: it should have your username and then the name of the repository and underneath that something like, "forked from <your_partners_uesername>/<the_name_of_the_repo>"
 
 ### Cloning (10:00 / 2:20)
 
@@ -273,17 +255,15 @@ Pair up with your neighbor or the person behind you (Only pair up with 1 other p
 
 Now that you've forked your partner's repository, you need some way to get it on to your computer (locally). This process is called **cloning**
 
-<details>
-	<summary>How to clone a repository</summary>
+**How to clone a repository**
 	
-	**Steps:**
-	1. From the repo page for the fork of your partner's repository (where we left off in the previous step), find the green button that says "Clone or Download".
-	2. Copy the link by highlighting it and hitting cmd + C or clicking on the clipboard button next to the link.
-	3. Open up a new terminal window and navigate to your sandbox directory
-	4. The command to clone a repository with git is `git clone <url_for_the_repo_you_want_to_clone>`. You can optionally pass in a name for the repository if you would like to name the working directory when you clone - don't worry about that right now though.
-	5. Change in to your new directory and run `git log` to see the commit history.
-	6. Run `git remote -v`. What do you get back? What is interesting about these links?
-</details>
+Steps:
+1. From the repo page for the fork of your partner's repository (where we left off in the previous step), find the green button that says "Clone or Download".
+2. Copy the link by highlighting it and hitting cmd + C or clicking on the clipboard button next to the link.
+3. Open up a new terminal window and navigate to your sandbox directory
+4. The command to clone a repository with git is `git clone <url_for_the_repo_you_want_to_clone>`. You can optionally pass in a name for the repository if you would like to name the working directory when you clone - don't worry about that right now though.
+5. Change in to your new directory and run `git log` to see the commit history.
+6. Run `git remote -v`. What do you get back? What is interesting about these links?
 
 ### Pull Requests (10:00 / 2:30
 
@@ -295,17 +275,14 @@ Where did we just push our changes to, our partner's repository on GitHub or our
 
 If we want to contribute our work back to the original project, we need to do so with a **pull request**
 
-<details>
-	<summary>How to make a pull request</summary>
+**How to make a pull request**
 	
-	**Steps:**
-	1. Push your work if you haven't already
-	2. There are a couple of ways to make a new pull request:
-		- From your fork, find and click the "New pull request" button (this is the fastest/easiest). This will take you to a new page with a "Create Pull Request" button.
-		- From the original repository, click on the Pull requests tab and then click the New Pull Request button. Click on the "compare across forks" link, find your fork in the 3rd dropdown. Then click the "Create Pull Request" button.
-	3. Give your pull request a title and a description. If this is a homework assignment, you should add your comfort level and completeness in the description and the title should include your full name.
-
-</details>
+Steps:
+1. Push your work if you haven't already
+2. There are a couple of ways to make a new pull request:
+	- From your fork, find and click the "New pull request" button (this is the fastest/easiest). This will take you to a new page with a "Create Pull Request" button.
+	- From the original repository, click on the Pull requests tab and then click the New Pull Request button. Click on the "compare across forks" link, find your fork in the 3rd dropdown. Then click the "Create Pull Request" button.
+3. Give your pull request a title and a description. If this is a homework assignment, you should add your comfort level and completeness in the description and the title should include your full name.
 
 ## Closing
 
