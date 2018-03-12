@@ -8,13 +8,13 @@
 - Synchronize a local repository with a remote repository using git with Github
 - Describe forking and making a pull request
 
-## Framing (5:00 / 0:05)
+## Framing (5 min / 0:05)
 
 Git is one of a couple tools that you will end up using every day as a developer; it's an essential component to every developer's work. So what is it?
 
 Git is a version control tool: it keeps track of changes across a collection of files for us. When we use Git, we can see what changes we made and seamlessly merge them with changes from our coworkers.
 
-## Version Control (20:00 / 0:25)
+## Version Control (20 min / 0:25)
 
 Simply put, version control is a way of tracking *changes* made to a file or group of files over time.
 
@@ -45,7 +45,7 @@ Here's a short list of things you can do with Git:
 - save your work with descriptive save messages (commits)
 - track multiple versions and histories of the same codebase (branching)
 
-## How To Work with Git (10:00 / 0:35)
+## How To Work with Git (10 min / 0:35)
 
 The basics of working with Git could be somewhat familiar to you. Git works inside of a **repository**: a folder where Git is watching and tracking changes to files. When we want to take some changes we've made and "save" our progress so far, we do so by **staging** those changes and **committing** them.
 
@@ -61,7 +61,7 @@ At any given time, we can go back to the version of our project at any given **c
 
 When collaborating on a project with other developers, Git gives us tools to create our own "area" for writing code, within that project. This "area" is called a **branch**. A **branch** is a sequence of commits that represents a version of our project. All Git repositories start with at least one branch (`master`).
 
-### Exercise 1: Creating a Repository and Committing - We Do (0:05 / 0:40)
+### Exercise 1: Creating a Repository and Committing - We Do (5 min / 0:40)
 
 1. Create a new `sample_portfolio` folder in your sandbox directory.
 2. Change your working directory to `sample_portfolio`.
@@ -71,7 +71,7 @@ When collaborating on a project with other developers, Git gives us tools to cre
 
 [What makes a great commit message?](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 
-### What did we just do? (10:00 / 0:50)
+### What did we just do? (10 min / 0:50)
 
 We've now created a new Git repository, done some work on a project and saved that work with Git! Let's recap:
 
@@ -95,7 +95,7 @@ Here's another way to think about it:
 
 ![Git Local Diagram](/images/git-local.jpg)
 
-### Exercise 1.5: More Commits / History - You Do (0:05 / 0:55)
+### Exercise 1.5: More Commits / History - You Do (5 min / 0:55)
 
 1. Modify `index.html`
 1. Add your changes to the staging area and create a new commit with an appropriate message.
@@ -110,7 +110,7 @@ Here's another way to think about it:
 
 ## Break (10 min / 1:05)
 
-## Using Git to Work with Others (0:20 / 1:25)
+## Using Git to Work with Others (20 min / 1:25)
 
 Git works really well as a version control tool but where it really shines is as a tool for collaboration (in combination with GitHub).
 
@@ -123,7 +123,7 @@ You have this awesome app idea, one that will definitely take off and become one
 The next morning, you hop on your bike to come in to class so you can show your classmates and get their feedback. But on your bike ride in, you slip and fall! You are totally fine and uninjured. But you didn't realize your backpack was open and when you fell your laptop slide out, straight down a sewer drain! What can you do? You call 311 and the person on the phone tells you they don't respond to lost item calls. 
 
 **How can Git and GitHub help?**
-	
+  
 GitHub compliments Git by managing **remote** versions of a repository (a version stored in the "cloud"). You can create a remote repository in GitHub, connect the remote with your **local** version and then **push** changes from your local repository to your remote repository.
 
 ### Scenario 2
@@ -136,7 +136,7 @@ After you figure out what features you want your classmates to build, one of the
 Since you're so flush with VC cash now, your first thought is to go and buy a bunch of fancy USB sticks with your company logo on them. Then, you can copy the codebase from your laptop on to each USB stick. It's a flawless idea!
 
 **How can Git and GitHub help?**
-	
+  
 USB sticks are a terrible idea.
 
 GitHub is a tool for collaborating with other developers. Don't buy USB sticks, add your classmates as collaborators on the repository on GitHub. Then, they'll be able to **clone** the repository down to their laptops and **push** their changes back up. When you need work from one of your coworkers, you can easily **pull** it.
@@ -148,7 +148,7 @@ The deadline you set with your VC backers is fast approaching and you still have
 You don't want to give the contractors privileged access to your app and you want some way to review their work before it gets merged into the final codebase. Maybe they should get the USB sticks?
 
 **How can Git and GitHub help?**
-	
+  
 USB sticks are still a terrible idea.
 
 GitHub works well for all kinds of collaboration. Later in the course, we'll have an entire class dedicated to different collaboration workflows with GitHub.
@@ -166,7 +166,7 @@ On your way to the gourmet coffee bar you bought with all that VC cash, you get 
 They don't want it on a USB stick. 
 
 **How can Git and GitHub help?**
-	
+  
 When your contractors fork the repository, they'll have a remote copy under their GitHub. They can clone that down and have a local and remote version of the repository of their own: their local is the copy on their laptop, their remote is the copy under their GitHub account (their fork).
 
 Your recent work, however, is in the original repository. The original repository is the **upstream** repository for you contractors. You can set multiple remotes for a local repository, provided they are based off the same original repository. So your contractors just have to set the original repository as the upstream repository for their local repository and they'll be able to pull changes from it (but not push changes to it).
@@ -177,11 +177,11 @@ Your contractors finish up their work and you merge all their pull requests. You
 
 Your investors are totally blown away by all the hard work you put in to building the app, congratulations!
 
-## We Do: Git and GitHub (5:00 / 1:25)
+## We Do: Git and GitHub (5 min / 1:25)
 
 We need a name for our startup (and repository). Head to [Namium](http://www.naminum.com/random) for some randomly generated startup names.
 
-### Creating your own remote repo (10:00 / 1:35)
+### Creating your own remote repo (10 min / 1:35)
 
 > This relates to **Scenario 1** from above
 
@@ -193,12 +193,12 @@ In this section, we'll learn to push changes made **locally** to our **remote** 
 2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
 3. Click on the plus sign and then on "New repository" from the dropdown menu
 4. Fill in the form for creating a new repo
-	- You'll want to give it a name (something descriptive and memorable)
-	- You'll generally want to keep the code public (especially for homework, labs and projects so your instructors can grade them)
-	- You want to leave the checkbox that says "Initialize this repository with a README" **unchecked**
+  - You'll want to give it a name (something descriptive and memorable)
+  - You'll generally want to keep the code public (especially for homework, labs and projects so your instructors can grade them)
+  - You want to leave the checkbox that says "Initialize this repository with a README" **unchecked**
 5. Hit the "Create repository" button
 
-### Exercise 2: Publish to a remote repository on Github (15:00 / 1:50)
+### Exercise 2: Publish to a remote repository on Github (15 min / 1:50)
 
 > This relates to **Scenario 1** from above
 
@@ -233,28 +233,28 @@ If you get `Permission Denied`, get help from the support instructor and referen
 
 ## Break (10 min / 2:00)
 
-### Forking (10:00 / 2:10)
+### Forking (10 min / 2:10)
 
 > This relates to **Scenario 3** from above and is generally how you will submit your homework
 
 Pair up with your neighbor or the person behind you (Only pair up with 1 other person. If there is an odd number of students, someone can pair up with the instructor as a demo).
 
 **How to fork a repository**
-	
+  
 1. Send your partner the link on GitHub to your repository (They should send you theirs)
 2. In the top right, below the plus-sign we used to create a new repository, there is a "Fork" button - click it.
 3. A modal *may* pop up with the title, "Where should we fork this repository?". If it does, click on your username.
 4. If everything works, you'll see a screen that has a book with a fork in it being scanned.
 5. You'll then be went to a page that looks like the one you were just on for your own repo. Take a close look at the heading in the top left: it should have your username and then the name of the repository and underneath that something like, "forked from <your_partners_uesername>/<the_name_of_the_repo>"
 
-### Cloning (10:00 / 2:20)
+### Cloning (10 min / 2:20)
 
 > This relates to **Scenario 3** from above and is generally how you will submit your homework
 
 Now that you've forked your partner's repository, you need some way to get it on to your computer (locally). This process is called **cloning**
 
 **How to clone a repository**
-	
+  
 1. From the repo page for the fork of your partner's repository (where we left off in the previous step), find the green button that says "Clone or Download".
 2. Copy the link by highlighting it and hitting cmd + C or clicking on the clipboard button next to the link.
 3. Open up a new terminal window and navigate to your sandbox directory
@@ -262,7 +262,7 @@ Now that you've forked your partner's repository, you need some way to get it on
 5. Change in to your new directory and run `git log` to see the commit history.
 6. Run `git remote -v`. What do you get back? What is interesting about these links?
 
-### Pull Requests (10:00 / 2:30
+### Pull Requests (10 min / 2:30)
 
 > This relates to **Scenario 3** from above and is generally how you will submit your homework
 
@@ -273,11 +273,11 @@ Where did we just push our changes to, our partner's repository on GitHub or our
 If we want to contribute our work back to the original project, we need to do so with a **pull request**
 
 **How to make a pull request**
-	
+  
 1. Push your work if you haven't already
 2. There are a couple of ways to make a new pull request:
-	- From your fork, find and click the "New pull request" button (this is the fastest/easiest). This will take you to a new page with a "Create Pull Request" button.
-	- From the original repository, click on the Pull requests tab and then click the New Pull Request button. Click on the "compare across forks" link, find your fork in the 3rd dropdown. Then click the "Create Pull Request" button.
+  - From your fork, find and click the "New pull request" button (this is the fastest/easiest). This will take you to a new page with a "Create Pull Request" button.
+  - From the original repository, click on the Pull requests tab and then click the New Pull Request button. Click on the "compare across forks" link, find your fork in the 3rd dropdown. Then click the "Create Pull Request" button.
 3. Give your pull request a title and a description. If this is a homework assignment, you should add your comfort level and completeness in the description and the title should include your full name.
 
 ## Closing
@@ -290,14 +290,13 @@ If we want to contribute our work back to the original project, we need to do so
 ## Quiz Questions
 
 1. What are the main components of a git repository and how do they relate?
-2. Describe the steps of the process for contributing to open source software on
-   Github (the same as our homework submission process).
+2. Describe the steps of the process for contributing to open source software on Github (the same as our homework submission process).
 
 ## Homework
 
 ### 1. Visit the [haiku](https://git.generalassemb.ly/ga-wdi-exercises/haiku) repo and follow the instructions there.
 
-In the comments of the Pull Request description, please include a block like so (numbers out of 5):
+In the comments of the Pull Request description, please include a block like so (numbers out of 5)...
 
 ```
 comfort_level: 4
@@ -328,10 +327,10 @@ Optional but highly recommended!
 OR
 * `git clone <URL>` - download (clone) a repo from github (or other remote source)
 
-### Linking an existing repo to github
+### Linking an existing repo to Github
 
 1. Create the repo on github.com (make sure not to check the 'initialize with readme').
-2. Follow the instructions on the new repo's webpage to add as a remote:
+2. Follow the instructions on the new repos webpage to add as a remote:
 3. Change directories to the local repo
   * `cd ~/path/to/repo`
 4. Add the github remote, and name it 'origin':
@@ -356,72 +355,3 @@ Once linked, you can just run `git push` to push master branch to master branch
   * If no origin/branch are specified, and no tracking branch is set up, git may tell you to specify
 2. 'git push [remote] [branch]' - push and merge local changes from the current branch to the specified branch on the remote repo and branch specified.
   * Same rules apply as `git pull` above.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### Documentation Deep Dive (15:00 / 1:40)
-> 10 min exercise / 5 min review
-
-Documentation takes time to be able to read, it's not easy at first to be able to extract what you need to know. Documentation can vary in readability; some documentation will be particularly difficult to read through for beginners. But with this exercise, we'll get some early practice.
-
-**Instructions:**
-
-1. Pair with a partner and spend 10 minutes researching the terms listed below using one or a mix of the options listed below
-2. We suggest researching each term together rather than splitting them up
-3. Afterwards, we'll spend a few minutes discussing your findings
-
-**Options:**
-
-1. Run `git help` in your terminal to output a glossary.
-2. Look over this [Github Glossary](https://help.github.com/articles/github-glossary/).
-3. Google all the terms / find your own documentation.
-
-**Terms:**
-
-- remote
-- Github
-- clone
-- fetch
-- merge
-- pull
-- push
-- merge conflict
-
-<details>
-  <summary>
-  Answer Key
-  </summary>
-  <ul>
-    <li> remote - another (non-local) repository that can be synchronized with your local one
-    </li>
-    <li> Github - a service that hosts Git repositories and provides a web app to interact / collaborate on them
-    </li>
-    <li> clone - download an entire remote repository, to be used as a local repository
-    </li>
-    <li> fetch - download the most recent changes (commits) from a remote repository
-    </li>
-    <li> merge - taking two histories (sequences of commits), and combining them together
-    </li>
-    <li> pull - fetching changes and merging them into the current branch (a combo of `git fetch` and `git merge`)
-    </li>
-    <li> push - sending changes (commits) to a remote repository and merging them into a specified branch
-    </li>
-    <li> merge conflict - when two commits conflict with one another during a merge (when they both modify the same line of code, typically)
-    </li>
-  </ul>
-</details>
-
