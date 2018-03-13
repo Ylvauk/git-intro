@@ -18,9 +18,10 @@ Git is a version control tool: it keeps track of changes across a collection of 
 
 Simply put, version control is a way of tracking *changes* made to a file or group of files over time.
 
-Git is a version control system (VCS). There are others, like Mercurial and SVN, but Git is the most popular and the most powerful.
+Git is a version control system. There are others, like Mercurial and SVN, but Git is the most popular and the most powerful. Git will track changes made to a group of files in a directory. Git users like ourselves can **commit** or save our changes and have access to a history of all the saves or **commits** that we have made.
 
 **Think, Pair, Share**
+
 > 5 min exercise, 5 min review
 
 Turn to the person next to you and discuss the questions below. After 5 minutes, we'll go over responses as a class.
@@ -36,7 +37,7 @@ If you've worked with track changes in Microsoft Word, then you're familiar with
 
 Git does this and a lot more. For example, if you and your coworker are writing a memo in Microsoft Word and using track changes, how do you keep track of which version is the final version (yours or your coworker's)? One common solution to this is to make a copy of the memo and add your initials to the file name, along with the date and time so you can keep track of different versions of the memo. Someone then has to manually add any changes you make to their version, or vice versa.
 
-Imagine if we had to do something like that with a codebase. The codebase for even a simple web application can be many files - it would take forever and be extremely error prone! 
+Imagine if we had to do something like that with a codebase. The codebase for even a simple web application can be many files - it would take forever and be extremely error prone!
 
 This is the problem Git solves for developers.
 
@@ -86,21 +87,20 @@ You want to be careful where you run `git init`. You only want to run that comma
 Saving our work in Git requires two steps: Adding changes to the **staging area** and then **committing** those changes.
 
 The **staging area** is one of Git's more unique features, and it can take some time to wrap your head around it. It helps to think of the **staging area** as a buffer between the working directory and the project history.
- 
 > [Why stage files?](http://gitolite.com/uses-of-index.html)
 
 Instead of automatically committing all of the changes you've made since the last commit, the **staging area** lets you group *related changes* into highly focused snapshots before actually committing to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece
 
-Here's another way to think about it: 
+Here's another way to think about it...
 
 ![Git Local Diagram](/images/git-local.jpg)
 
 ### Exercise 1.5: More Commits / History - You Do (5 min / 0:55)
 
 1. Modify `index.html`
-1. Add your changes to the staging area and create a new commit with an appropriate message.
-1. Create a new html file and stage and commit.
-1. View the **commit history** by running `git log` to see the log of commits, and what changed each commit changed.
+2. Add your changes to the staging area and create a new commit with an appropriate message.
+3. Create a new html file and stage and commit.
+4. View the **commit history** by running `git log` to see the log of commits, and what changed each commit changed.
 
 > TROUBLESHOOTING: If you've initialized the git repository in your sandbox directory instead of the resume folder, try running:
 >
@@ -120,37 +120,36 @@ For the next couple of minutes, we're going to walk through a couple of scenario
 
 You have this awesome app idea, one that will definitely take off and become one of those "unicorn" apps worth billions and billions. You jump straight in to development and start working on the MVP on your laptop. You work through the night and get really far on your MVP, maybe 85% complete.
 
-The next morning, you hop on your bike to come in to class so you can show your classmates and get their feedback. But on your bike ride in, you slip and fall! You are totally fine and uninjured. But you didn't realize your backpack was open and when you fell your laptop slide out, straight down a sewer drain! What can you do? You call 311 and the person on the phone tells you they don't respond to lost item calls. 
+The next morning, you hop on your bike to come in to class so you can show your classmates and get their feedback. But on your bike ride in, you slip and fall! You are totally fine and uninjured. But you didn't realize your backpack was open and when you fell your laptop slide out, straight down a sewer drain! What can you do? You call 311 and the person on the phone tells you they don't respond to lost item calls.
 
 **How can Git and GitHub help?**
-  
+
 GitHub complements Git by storing versions of a `git` repository on it servers, **remotely**. GitHub manages access to repositories and also provides many different services for interacting with repositories on GitHub. Repositories are associated with GitHub accounts, like yours. Unless .
 
 You can create a remote repository in GitHub, link the remote with your **local** version using `git remote` commands like `add`, `set-url`, and `remove`. After that link is established, you are able to **push** changes from your local repository up to your remote repository on your GitHub account.
 
 ### Scenario 2
-Your friend lends you their laptop and you completely rebuild your MVP from scratch. This time however, you create a remote repository in GitHub to save your work there. 
-
+Your friend lends you their laptop and you completely rebuild your MVP from scratch. This time however, you create a remote repository in GitHub to save your work there.
 You finish your MVP and go talk to a bunch of investors. One of them gives you a million dollars to finish building it out! 🤑 You decide hire all your WDI classmates to help you finish the app and take it to market.
 
 After you figure out what features you want your classmates to build, one of them asks how they can start working on the codebase. You have the code on your laptop and on GitHub. How can your classmate (now coworker) get the code?
 
-Since you're so flush with VC cash now, your first thought is to go and buy a bunch of fancy USB sticks with your company logo on them. Then, you can copy the codebase from your laptop on to each USB stick. It's a flawless idea!
+Since you're so flush with investor cash now, your first thought is to go and buy a bunch of fancy USB sticks with your company logo on them. Then, you can copy the codebase from your laptop on to each USB stick. It's a flawless idea!
 
 **How can Git and GitHub help?**
-  
+
 USB sticks are a terrible idea.
 
 GitHub is a tool for collaborating with other developers. Don't buy USB sticks, add your classmates as collaborators on the repository on GitHub. Then, they'll be able to **clone** the repository down to their laptops and **push** their changes back up. When you need work from one of your coworkers, you can easily **pull** it.
 
 ### Scenario 3
 
-The deadline you set with your VC backers is fast approaching and you still have a lot of work on your app that needs to be finished. It's time to hire some contractors to help push your app over the finish line!
+The deadline you set with your investors is fast approaching and you still have a lot of work on your app that needs to be finished. It's time to hire some contractors to help push your app over the finish line!
 
 You don't want to give the contractors privileged access to your app and you want some way to review their work before it gets merged into the final codebase. Maybe they should get the USB sticks?
 
 **How can Git and GitHub help?**
-  
+
 USB sticks are still a terrible idea.
 
 GitHub works well for all kinds of collaboration. Later in the course, we'll have an entire class dedicated to different collaboration workflows with GitHub.
@@ -159,16 +158,16 @@ What you want is for your contractors to **fork** your repository on GitHub: mak
 
 ### Scenario 4
 
-Your contractors have made their forks and are off finishing their work. You can now finally finish the feature you need to build.
+You have finished building the feature you've set out to build. Now, your contractors have made their forks and are off finishing their own work.
 
-You finish it up, push it to GitHub and then throw your hands up in the air. Eureka! Your'e finished. Time for a celebratory cup of coffee.
+You finish it up, push it to GitHub and then throw your hands up in the air. Eureka! You're finished. Time for a celebratory cup of coffee.
 
-On your way to the gourmet coffee bar you bought with all that VC cash, you get a call from one of the contractors. They need the work you just finished to make sure that their code works with yours.
+On your way to the gourmet coffee bar you bought with all that investor money, you get a call from one of the contractors. They need the work you just finished to make sure that their code works with yours.
 
-They don't want it on a USB stick. 
+They don't want it on a USB stick.
 
 **How can Git and GitHub help?**
-  
+
 When your contractors fork the repository, they'll have a remote copy under their GitHub. They can clone that down and have a local and remote version of the repository of their own: their local is the copy on their laptop, their remote is the copy under their GitHub account (their fork).
 
 Your recent work, however, is in the original repository. The original repository is the **upstream** repository for you contractors. You can set multiple remotes for a local repository, provided they are based off the same original repository. So your contractors just have to set the original repository as the upstream repository for their local repository and they'll be able to pull changes from it (but not push changes to it).
@@ -242,7 +241,7 @@ If you get `Permission Denied`, get help from the support instructor and referen
 Pair up with your neighbor or the person behind you (Only pair up with 1 other person. If there is an odd number of students, someone can pair up with the instructor as a demo).
 
 **How to fork a repository**
-  
+
 1. Send your partner the link on GitHub to your repository (They should send you theirs)
 2. In the top right, below the plus-sign we used to create a new repository, there is a "Fork" button - click it.
 3. A modal *may* pop up with the title, "Where should we fork this repository?". If it does, click on your username.
@@ -256,7 +255,7 @@ Pair up with your neighbor or the person behind you (Only pair up with 1 other p
 Now that you've forked your partner's repository, you need some way to get it on to your computer (locally). This process is called **cloning**
 
 **How to clone a repository**
-  
+
 1. From the repo page for the fork of your partner's repository (where we left off in the previous step), find the green button that says "Clone or Download".
 2. Copy the link by highlighting it and hitting cmd + C or clicking on the clipboard button next to the link.
 3. Open up a new terminal window and navigate to your sandbox directory
@@ -275,7 +274,7 @@ Where did we just push our changes to, our partner's repository on GitHub or our
 If we want to contribute our work back to the original project, we need to do so with a **pull request**
 
 **How to make a pull request**
-  
+
 1. Push your work if you haven't already
 2. There are a couple of ways to make a new pull request:
   - From your fork, find and click the "New pull request" button (this is the fastest/easiest). This will take you to a new page with a "Create Pull Request" button.
