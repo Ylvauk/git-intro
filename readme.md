@@ -32,7 +32,7 @@ Turn to the person next to you and discuss the questions below. After 5 minutes,
 
 **Follow Up**
 
-If you've worked with track changes in Microsoft Word, then you're familiar with part of what Git does. Track changes will track any changes (inserted text, deleted text, etc) to a document. It will mark those changes by highlighting them in red or green.
+If you've worked with track changes in Microsoft Word, then you're familiar with part of what Git does. Track changes will track any changes (inserted text, deleted text, etc) to a document. Git can show *differences* between the current version and the previous version in something called a `diff` (command: `git diff`). A `diff` will show what has been added in green text or highlighting, while displaying the things removed in red.
 
 Git does this and a lot more. For example, if you and your coworker are writing a memo in Microsoft Word and using track changes, how do you keep track of which version is the final version (yours or your coworker's)? One common solution to this is to make a copy of the memo and add your initials to the file name, along with the date and time so you can keep track of different versions of the memo. Someone then has to manually add any changes you make to their version, or vice versa.
 
@@ -47,7 +47,7 @@ Here's a short list of things you can do with Git:
 
 ## How To Work with Git (10 min / 0:35)
 
-The basics of working with Git could be somewhat familiar to you. Git works inside of a **repository**: a folder where Git is watching and tracking changes to files. When we want to take some changes we've made and "save" our progress so far, we do so by **staging** those changes and **committing** them.
+The basics of working with Git could be somewhat familiar to you. Git works inside of a **repository**: a folder where Git is watching and tracking changes to files. When we want to record or **commit** some changes we've made and 'save our progress so far, we do so by **staging** those changes and then **committing** them.
 
 A **repository** is like a special kind of filing cabinet that stores a bunch of snapshots of a project taken at different points the project's development. It contains all of a project's **branches**, each of which are composed of **commits** representing individual changes to a project over time. As such, a **repository** encompasses all of the different versions of a project and their development histories.
 
@@ -124,7 +124,9 @@ The next morning, you hop on your bike to come in to class so you can show your 
 
 **How can Git and GitHub help?**
   
-GitHub compliments Git by managing **remote** versions of a repository (a version stored in the "cloud"). You can create a remote repository in GitHub, connect the remote with your **local** version and then **push** changes from your local repository to your remote repository.
+GitHub complements Git by storing versions of a `git` repository on it servers, **remotely**. GitHub manages access to repositories and also provides many different services for interacting with repositories on GitHub. Repositories are associated with GitHub accounts, like yours. Unless .
+
+You can create a remote repository in GitHub, link the remote with your **local** version using `git remote` commands like `add`, `set-url`, and `remove`. After that link is established, you are able to **push** changes from your local repository up to your remote repository on your GitHub account.
 
 ### Scenario 2
 Your friend lends you their laptop and you completely rebuild your MVP from scratch. This time however, you create a remote repository in GitHub to save your work there. 
