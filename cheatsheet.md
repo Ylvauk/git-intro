@@ -3,9 +3,11 @@
 ## Local Repo Actions
 
 ### Create a repo
+
 * `$ git init`
 
 ### Making Changes
+
 * modify / save files (make changes)
 * `$ git add <file1> <file2>` ...
 * `$ git commit -m "descriptive message"`
@@ -13,15 +15,19 @@
 ## Remote Actions
 
 ### Cloning
-* `$ git clone <url>` - download a repo from the URL, including all it's history, auto setup as remote
+
+* `$ git clone <url>` - download a repo from the URL, including all it's
+  history, auto setup as remote
 
 ### Putting an existing repo on github
+
 * create on github
 * locally:
   * `$ git remote add origin <github_url>`
   * `$ git push -u origin master`  - this tells git to push to origin master by default
 
 ### Syncing changes
+
 * `$ git pull [remote_name] [branch_name]` - fetch changes and merge them in
 * `$ git push [remote_name] [branch_name]` - push changes to a remote repo
 
@@ -43,7 +49,7 @@ Forking and Pull Requests are features of Github (not git).
 5. Open a pull request by clicking the Pull Request link on your fork page.
 
 ### Three Commands to Remember (you will use them all the time!)
+
 * `$ git add <file1> <file2>` ...
 * `$ git commit -m "descriptive message"`
- * `$ git push -u origin master`
-
+  * `$ git push -u origin master`
