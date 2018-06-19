@@ -167,7 +167,7 @@ Here's another way to think about it...
 2. Add your changes to the staging area and create a new commit with an
    appropriate message.
    <details><summary>What it looks like on Terminal</summary>
-    ![clone or download](images/gitCommit.png)
+    ![Git commit](images/gitCommit.png)
     </details>
 
 3. Create a new html file and stage and commit.
@@ -175,7 +175,7 @@ Here's another way to think about it...
    and what changed each commit changed.
 
    <details><summary>What it looks like on Terminal</summary>
-    ![clone or download](images/GitLog.png)
+    ![Git log](images/GitLog.png)
     </details>
 
 > TROUBLESHOOTING: If you've initialized the git repository in your sandbox
@@ -325,7 +325,7 @@ repo, hosted on our GitHub account.
 2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
 3. Click on the plus sign and then on "New repository" from the dropdown menu
 <details><summary>What it looks like on Github</summary>
- ![clone or download](images/NewRepo.png)
+ ![New Repo](images/NewRepo.png)
  </details>
 
 4. Fill in the form for creating a new repo
@@ -336,7 +336,7 @@ repo, hosted on our GitHub account.
     README" **unchecked**
 5. Hit the "Create repository" button
 <details><summary>What it looks like on Github</summary>
- ![clone or download](images/RepoDetails.png)
+ ![Repo Details](images/RepoDetails.png)
  </details>
 
 ### Exercise 2: Publish to a remote repository on Github (15 min / 1:50)
@@ -377,7 +377,7 @@ lesson](https://git.generalassemb.ly/dc-wdi-fundamentals/git-ssh).
     about which commands you need here
   - Hint: Does the repository on your LOCAL system already exist?
   <details><summary>What it looks like on Github</summary>
-   ![clone or download](images/RepoSetup.png)
+   ![RepoSetup](images/RepoSetup.png)
    </details>
 5. Open the repo on GitHub and explore the code there
 6. Make a change locally, commit it, and push it
@@ -402,7 +402,7 @@ instructor as a demo).
 2. In the top right, below the plus-sign we used to create a new repository,
    there is a "Fork" button - click it.
    <details><summary>What it looks like on Github</summary>
-    ![clone or download](images/Fork.png)
+    ![Forking](images/Fork.png)
     </details>
 3. A modal *may* pop up with the title, "Where should we fork this repository?".
    If it does, click on your username.
@@ -414,7 +414,7 @@ instructor as a demo).
    something like, "forked from
    <your_partners_uesername>/<the_name_of_the_repo>"
    <details><summary>What it looks like on Github</summary>
-    ![clone or download](images/ForkedFrom.png)
+    ![Forked From](images/ForkedFrom.png)
     </details>
 
 ### Cloning (10 min / 2:20)
