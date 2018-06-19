@@ -166,17 +166,13 @@ Here's another way to think about it...
 1. Modify `index.html`
 2. Add your changes to the staging area and create a new commit with an
    appropriate message.
-   <details><summary>What it looks like on Terminal</summary>
-    ![Git commit](images/gitCommit.png)
-    </details>
+![Git commit](images/gitCommit.png)
 
 3. Create a new html file and stage and commit.
 4. View the **commit history** by running `git log` to see the log of commits,
    and what changed each commit changed.
+![Git log](images/GitLog.png)
 
-   <details><summary>What it looks like on Terminal</summary>
-    ![Git log](images/GitLog.png)
-    </details>
 
 > TROUBLESHOOTING: If you've initialized the git repository in your sandbox
 >directory instead of the resume folder, try running:
@@ -323,10 +319,7 @@ repo, hosted on our GitHub account.
 
 1. Go to [GitHub](https://github.com)
 2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
-3. Click on the plus sign and then on "New repository" from the dropdown menu
-<details><summary>What it looks like on Github</summary>
- ![New Repo](images/NewRepo.png)
- </details>
+3. Click on the plus sign and then on "New repository" from the dropdown menu              ![New Repo](images/NewRepo.png)
 
 4. Fill in the form for creating a new repo
   - You'll want to give it a name (something descriptive and memorable)
@@ -335,9 +328,9 @@ repo, hosted on our GitHub account.
   - You want to leave the checkbox that says "Initialize this repository with a
     README" **unchecked**
 5. Hit the "Create repository" button
-<details><summary>What it looks like on Github</summary>
- ![Repo Details](images/RepoDetails.png)
- </details>
+
+![Repo Details](images/RepoDetails.png)
+
 
 ### Exercise 2: Publish to a remote repository on Github (15 min / 1:50)
 
@@ -358,7 +351,7 @@ ssh -T git@git.generalassemb.ly
 If you are already set up, you should see a response like:
 
 ```sh
-Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
+"Hi <username>! You've successfully authenticated, but GitHub does not provide shell access."
 ```
 
 If you get `Permission Denied`, get help from the support instructor and
@@ -376,9 +369,8 @@ lesson](https://git.generalassemb.ly/dc-wdi-fundamentals/git-ssh).
   - NOTE: there are 3 options for setting up your repo. take a second to think
     about which commands you need here
   - Hint: Does the repository on your LOCAL system already exist?
-  <details><summary>What it looks like on Github</summary>
-   ![RepoSetup](images/RepoSetup.png)
-   </details>
+![RepoSetup](images/RepoSetup.png)
+
 5. Open the repo on GitHub and explore the code there
 6. Make a change locally, commit it, and push it
 7. Open the repo on Github, and note that the changes have synced (you may have
@@ -401,9 +393,8 @@ instructor as a demo).
    theirs)
 2. In the top right, below the plus-sign we used to create a new repository,
    there is a "Fork" button - click it.
-   <details><summary>What it looks like on Github</summary>
     ![Forking](images/Fork.png)
-    </details>
+
 3. A modal *may* pop up with the title, "Where should we fork this repository?".
    If it does, click on your username.
 4. If everything works, you'll see a screen that has a book with a fork in it
@@ -413,9 +404,9 @@ instructor as a demo).
    have your username and then the name of the repository and underneath that
    something like, "forked from
    <your_partners_uesername>/<the_name_of_the_repo>"
-   <details><summary>What it looks like on Github</summary>
-    ![Forked From](images/ForkedFrom.png)
-    </details>
+
+   ![Forked From](images/ForkedFrom.png)
+
 
 ### Cloning (10 min / 2:20)
 
@@ -432,9 +423,8 @@ to your computer (locally). This process is called **cloning**
    Download".
 2. Copy the link by highlighting it and hitting cmd + C or clicking on the
    clipboard button next to the link.
-   <details><summary>What it looks like on Github</summary>
     ![clone or download](images/Clone.png)
-    </details>
+    
 3. Open up a new terminal window and navigate to your sandbox directory
 4. The command to clone a repository with git is `git clone
    <url_for_the_repo_you_want_to_clone>`. You can optionally pass in a name for
