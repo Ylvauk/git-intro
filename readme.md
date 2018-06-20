@@ -266,7 +266,7 @@ changes they need to, then ask for their work to be merged back into the
 original repository by making a **pull request**. You or one of your coworkers
 can review their pull request and **merge** it if everything looks good.
 
-### Scenario 4
+<!-- ### Scenario 4
 
 You have finished building the feature you've set out to build. Now, your
 contractors have made their forks and are off finishing their own work.
@@ -292,7 +292,7 @@ repository is the **upstream** repository for you contractors. You can set
 multiple remotes for a local repository, provided they are based off the same
 original repository. So your contractors just have to set the original
 repository as the upstream repository for their local repository and they'll be
-able to pull changes from it (but not push changes to it).
+able to pull changes from it (but not push changes to it). -->
 
 ### Conclusion
 
@@ -424,7 +424,7 @@ to your computer (locally). This process is called **cloning**
 2. Copy the link by highlighting it and hitting cmd + C or clicking on the
    clipboard button next to the link.
     ![clone or download](images/Clone.png)
-    
+
 3. Open up a new terminal window and navigate to your sandbox directory
 4. The command to clone a repository with git is `git clone
    <url_for_the_repo_you_want_to_clone>`. You can optionally pass in a name for
@@ -453,12 +453,16 @@ with a **pull request**
 
 1. Push your work if you haven't already
 2. There are a couple of ways to make a new pull request:
+
+![clone or download](images/pullRequest.png)
   - From your fork, find and click the "New pull request" button (this is the
     fastest/easiest). This will take you to a new page with a "Create Pull
     Request" button.
   - From the original repository, click on the Pull requests tab and then click
     the New Pull Request button. Click on the "compare across forks" link, find
     your fork in the 3rd dropdown. Then click the "Create Pull Request" button.
+
+![clone or download](images/CreatePullReq.png)
 3. Give your pull request a title and a description. If this is a homework
    assignment, you should add your comfort level and completeness in the
    description and the title should include your full name.
