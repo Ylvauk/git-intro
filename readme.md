@@ -17,6 +17,7 @@ Git is a version control tool: it keeps track of changes across a collection of
 files for us. When we use Git, we can see what changes we made and seamlessly
 merge them with changes from our coworkers.
 
+![Versioning Diagram](images/wordVersioningTool.png)
 ## Version Control (20 min / 0:25)
 
 Simply put, version control is a way of tracking *changes* made to a file or
@@ -51,6 +52,8 @@ deleted text, etc) to a document. Git can show *differences* between the current
 version and the previous version in something called a `diff` (command: `git
 diff`). A `diff` will show what has been added in green text or highlighting,
 while displaying the things removed in red.
+
+![Commit Versions](images/CommitVersions.png)
 
 Git does this and a lot more. For example, if you and your coworker are writing
 a memo in Microsoft Word and using track changes, how do you keep track of which
@@ -140,7 +143,7 @@ the `.git` directory (using `rm -rf`).
 **Saving Our Work:**
 
 Saving our work in Git requires two steps: Adding changes to the **staging
-area** and then **committing** those changes.
+area** (`git add .`) and then **committing** (`git commit -m"description of changes"`) those changes.
 
 The **staging area** is one of Git's more unique features, and it can take some
 time to wrap your head around it. It helps to think of the **staging area** as a
@@ -163,9 +166,13 @@ Here's another way to think about it...
 1. Modify `index.html`
 2. Add your changes to the staging area and create a new commit with an
    appropriate message.
+![Git commit](images/gitCommit.png)
+
 3. Create a new html file and stage and commit.
 4. View the **commit history** by running `git log` to see the log of commits,
    and what changed each commit changed.
+![Git log](images/GitLog.png)
+
 
 > TROUBLESHOOTING: If you've initialized the git repository in your sandbox
 >directory instead of the resume folder, try running:
@@ -259,7 +266,7 @@ changes they need to, then ask for their work to be merged back into the
 original repository by making a **pull request**. You or one of your coworkers
 can review their pull request and **merge** it if everything looks good.
 
-### Scenario 4
+<!-- ### Scenario 4
 
 You have finished building the feature you've set out to build. Now, your
 contractors have made their forks and are off finishing their own work.
@@ -285,7 +292,7 @@ repository is the **upstream** repository for you contractors. You can set
 multiple remotes for a local repository, provided they are based off the same
 original repository. So your contractors just have to set the original
 repository as the upstream repository for their local repository and they'll be
-able to pull changes from it (but not push changes to it).
+able to pull changes from it (but not push changes to it). -->
 
 ### Conclusion
 
@@ -312,7 +319,8 @@ repo, hosted on our GitHub account.
 
 1. Go to [GitHub](https://github.com)
 2. In the top-right corner of the dashboard, you'll see a plus sign (**+**)
-3. Click on the plus sign and then on "New repository" from the dropdown menu
+3. Click on the plus sign and then on "New repository" from the dropdown menu              ![New Repo](images/NewRepo.png)
+
 4. Fill in the form for creating a new repo
   - You'll want to give it a name (something descriptive and memorable)
   - You'll generally want to keep the code public (especially for homework, labs
@@ -320,6 +328,9 @@ repo, hosted on our GitHub account.
   - You want to leave the checkbox that says "Initialize this repository with a
     README" **unchecked**
 5. Hit the "Create repository" button
+
+![Repo Details](images/RepoDetails.png)
+
 
 ### Exercise 2: Publish to a remote repository on Github (15 min / 1:50)
 
@@ -340,7 +351,7 @@ ssh -T git@git.generalassemb.ly
 If you are already set up, you should see a response like:
 
 ```sh
-Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
+"Hi <username>! You've successfully authenticated, but GitHub does not provide shell access."
 ```
 
 If you get `Permission Denied`, get help from the support instructor and
@@ -358,6 +369,8 @@ lesson](https://git.generalassemb.ly/dc-wdi-fundamentals/git-ssh).
   - NOTE: there are 3 options for setting up your repo. take a second to think
     about which commands you need here
   - Hint: Does the repository on your LOCAL system already exist?
+![RepoSetup](images/RepoSetup.png)
+
 5. Open the repo on GitHub and explore the code there
 6. Make a change locally, commit it, and push it
 7. Open the repo on Github, and note that the changes have synced (you may have
@@ -380,6 +393,8 @@ instructor as a demo).
    theirs)
 2. In the top right, below the plus-sign we used to create a new repository,
    there is a "Fork" button - click it.
+    ![Forking](images/Fork.png)
+
 3. A modal *may* pop up with the title, "Where should we fork this repository?".
    If it does, click on your username.
 4. If everything works, you'll see a screen that has a book with a fork in it
@@ -389,6 +404,9 @@ instructor as a demo).
    have your username and then the name of the repository and underneath that
    something like, "forked from
    <your_partners_uesername>/<the_name_of_the_repo>"
+
+   ![Forked From](images/ForkedFrom.png)
+
 
 ### Cloning (10 min / 2:20)
 
@@ -405,6 +423,8 @@ to your computer (locally). This process is called **cloning**
    Download".
 2. Copy the link by highlighting it and hitting cmd + C or clicking on the
    clipboard button next to the link.
+    ![clone or download](images/Clone.png)
+
 3. Open up a new terminal window and navigate to your sandbox directory
 4. The command to clone a repository with git is `git clone
    <url_for_the_repo_you_want_to_clone>`. You can optionally pass in a name for
@@ -433,12 +453,16 @@ with a **pull request**
 
 1. Push your work if you haven't already
 2. There are a couple of ways to make a new pull request:
+
+![clone or download](images/pullRequest.png)
   - From your fork, find and click the "New pull request" button (this is the
     fastest/easiest). This will take you to a new page with a "Create Pull
     Request" button.
   - From the original repository, click on the Pull requests tab and then click
     the New Pull Request button. Click on the "compare across forks" link, find
     your fork in the 3rd dropdown. Then click the "Create Pull Request" button.
+
+![clone or download](images/CreatePullReq.png)
 3. Give your pull request a title and a description. If this is a homework
    assignment, you should add your comfort level and completeness in the
    description and the title should include your full name.
