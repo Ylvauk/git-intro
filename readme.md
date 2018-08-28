@@ -74,6 +74,7 @@ Here's a short list of things you can do with Git:
 - track changes to a set of files over time (version control)
 - save your work with descriptive save messages (commits)
 - track multiple versions and histories of the same codebase (branching)
+- merge branches together to combine multiple developer's efforts
 
 ## How To Work with Git (10 min / 0:35)
 
@@ -99,7 +100,7 @@ stored together in a repository.
 For every feature you add, even a very small one, you should make a commit. If
 you go an hour without committing, it's usually best to go ahead and commit what
 you have gotten to work in the last hour. Your mileage may vary, but it's
-probably best to commit ever 20-45 minutes.
+probably best to commit every 20-45 minutes.
 
 **Commit Early, Commit Often!**
 
@@ -119,6 +120,7 @@ version of our project. All Git repositories start with at least one branch
 2. Change your working directory to `sample_portfolio`.
 3. Initialize a git repository in the `sample_portfolio` folder. (`git init`)
 4. Create a `index.html` file and write anything in it.
+5. Check your status to see what changed - `git status`
 5. Add `index.html` to the staging area and then make a commit.
 
 [What makes a great commit
@@ -137,13 +139,13 @@ changes to the files in this directory.
 
 You want to be careful where you run `git init`. You only want to run that
 command in a folder where you want to create a new repository. If you
-accidentally run it somewhere else, can you delete the repository by removing
+accidentally run it somewhere else, can you delete the repository by removing 
 the `.git` directory (using `rm -rf`).
 
 **Saving Our Work:**
 
 Saving our work in Git requires two steps: Adding changes to the **staging
-area** (`git add .`) and then **committing** (`git commit -m"description of changes"`) those changes.
+area** (`git add path/to/filename.js`) and then **committing** (`git commit -m "description of changes"`) those changes.
 
 The **staging area** is one of Git's more unique features, and it can take some
 time to wrap your head around it. It helps to think of the **staging area** as a
@@ -175,7 +177,7 @@ Here's another way to think about it...
 
 
 > TROUBLESHOOTING: If you've initialized the git repository in your sandbox
->directory instead of the resume folder, try running:
+>directory instead of the sample_portfolio folder, try running:
 >
 >`rm -rf .git`
 >
@@ -210,7 +212,7 @@ respond to lost item calls.
 GitHub complements Git by storing versions of a `git` repository on it servers,
 **remotely**. GitHub manages access to repositories and also provides many
 different services for interacting with repositories on GitHub. Repositories are
-associated with GitHub accounts, like yours. Unless .
+associated with GitHub accounts, like yours.
 
 You can create a remote repository in GitHub, link the remote with your
 **local** version using `git remote` commands like `add`, `set-url`, and
@@ -344,8 +346,8 @@ To check whether you have SSH access set up with GitHub / GHE, run these two
 commands (don't include the `$`):
 
 ```sh
-ssh -T git@github.com
-ssh -T git@git.generalassemb.ly
+$ ssh -T git@github.com
+$ ssh -T git@git.generalassemb.ly
 ```
 
 If you are already set up, you should see a response like:
@@ -361,7 +363,7 @@ lesson](https://git.generalassemb.ly/dc-wdi-fundamentals/git-ssh).
 **How to publish to a remote repository on Github**
 
 1. Make a new directory inside your `sandbox/` directory with the same name as
-   your remote repository from the previous step.
+   your remote repository you created on github.
 2. Create an `index.html` file and "save" it (add and commit).
 3. Ensure you have at least one commit (`git log` to verify)
 4. Follow the steps provided to add repo as a remote and push your local commits
@@ -396,7 +398,7 @@ instructor as a demo).
     ![Forking](images/Fork.png)
 
 3. A modal *may* pop up with the title, "Where should we fork this repository?".
-   If it does, click on your username.
+   If it does, click on your github.com username (not the enterprise github, if they're different).
 4. If everything works, you'll see a screen that has a book with a fork in it
    being scanned.
 5. You'll then be went to a page that looks like the one you were just on for
