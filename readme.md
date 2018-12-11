@@ -494,7 +494,7 @@ comfort_level: 4
 completeness: 5
 ```
 
-### 2. Read [Understanding git for real by exploring the .git directory(https://medium.freecodecamp.org/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807)
+### 2. Read [Understanding git for real by exploring the .git directory](https://medium.freecodecamp.org/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807)
 
 Optional but highly recommended!
 
