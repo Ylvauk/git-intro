@@ -52,6 +52,8 @@ version and the previous version in something called a `diff` (command: `git
 diff`). A `diff` will show what has been added in green text or highlighting,
 while displaying the things removed in red.
 
+![Git Diff view](/assets/git-diff.png)
+
 Git does this and a lot more. For example, if you and your coworker are writing
 a memo in Microsoft Word and using track changes, how do you keep track of which
 version is the final version (yours or your coworker's)? One common solution to
@@ -76,7 +78,7 @@ Here's a short list of things you can do with Git:
 
 The basics of working with Git could be somewhat familiar to you. Git works
 inside of a **repository**: a folder where Git is watching and tracking changes
-to files. When we want to record or **commit** some changes we've made and 'save
+to files. When we want to save or **commit** some changes we've made and save
 our progress so far, we do so by **staging** those changes and then
 **committing** them.
 
@@ -87,7 +89,7 @@ contains all of a project's **branches**, each of which are composed of
 **repository** encompasses all of the different versions of a project and their
 development histories.
 
-"Saving" our work with Git involves two steps: staging some changes and the
+"Saving" our work with Git involves two steps: staging some changes and then
 committing them. Each commit is like a "save-point" that, collectively, track
 the version of our project at a given point in time. Each commit has a commit
 message that describes the changes made to a file or group of files. Commits get
@@ -156,7 +158,7 @@ piece-by-piece
 
 Here's another way to think about it...
 
-![Git Local Diagram](/images/git-local.jpg)
+![Git Local Diagram](/assets/git-local.jpg)
 
 ### Exercise 1.5: More Commits / History - You Do (5 min / 0:55)
 
@@ -168,11 +170,11 @@ Here's another way to think about it...
    and what changed each commit changed.
 
 > TROUBLESHOOTING: If you've initialized the git repository in your sandbox
->directory instead of the resume folder, try running:
+> directory instead of the sample_portfolio folder, try running:
 >
->`rm -rf .git`
+> `rm -rf .git`
 >
->MAKE SURE YOU DON'T FORGET `.git` IF YOU DO THIS
+> MAKE SURE YOU DON'T FORGET `.git` IF YOU DO THIS
 
 ## Break (10 min / 1:05)
 
