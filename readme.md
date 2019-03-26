@@ -364,18 +364,19 @@ lesson](https://git.generalassemb.ly/dc-wdi-fundamentals/git-ssh).
 
 1. Make a new directory inside your `sandbox/` directory with the same name as
    your remote repository you created on github.
-2. Create an `index.html` file and "save" it (add and commit).
-3. Ensure you have at least one commit (`git log` to verify)
-4. Follow the steps provided to add repo as a remote and push your local commits
+2. Run `npm init`
+3. Create an `index.html` file and "save" it (add and commit).
+4. Ensure you have at least one commit (`git log` to verify)
+5. Follow the steps provided to add repo as a remote and push your local commits
    to the remote repository
   - NOTE: there are 3 options for setting up your repo. take a second to think
     about which commands you need here
   - Hint: Does the repository on your LOCAL system already exist?
 ![RepoSetup](images/RepoSetup.png)
 
-5. Open the repo on GitHub and explore the code there
-6. Make a change locally, commit it, and push it
-7. Open the repo on Github, and note that the changes have synced (you may have
+6. Open the repo on GitHub and explore the code there
+7. Make a change locally, commit it, and push it
+8. Open the repo on Github, and note that the changes have synced (you may have
    to refresh)
 
 ## Break (10 min / 2:00)
