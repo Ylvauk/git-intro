@@ -225,7 +225,7 @@ Your friend lends you their laptop and you completely rebuild your MVP from
 scratch. This time however, you create a remote repository in GitHub to save
 your work there. You finish your MVP and go talk to a bunch of investors. One of
 them gives you a million dollars to finish building it out! 🤑 You decide hire
-all your WDI classmates to help you finish the app and take it to market.
+all your SEI classmates to help you finish the app and take it to market.
 
 After you figure out what features you want your classmates to build, one of
 them asks how they can start working on the codebase. You have the code on your
@@ -401,7 +401,7 @@ instructor as a demo).
    If it does, click on your github.com username (not the enterprise github, if they're different).
 4. If everything works, you'll see a screen that has a book with a fork in it
    being scanned.
-5. You'll then be went to a page that looks like the one you were just on for
+5. You'll then be sent to a page that looks like the one you were just on for
    your own repo. Take a close look at the heading in the top left: it should
    have your username and then the name of the repository and underneath that
    something like, "forked from
