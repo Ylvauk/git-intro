@@ -255,7 +255,7 @@ the `git remote` command. This command has a lot of subcommands to it, including
 `add`, which we used to add our GitHub repo as the remote to our local repo:
 
 ```sh
-git add origin <ssh_url_to_github_repo>
+git remote add origin <ssh_url_to_github_repo>
 ```
 
 In the above command, `origin` is a name that we're giving this remote. We can
