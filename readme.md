@@ -50,7 +50,7 @@ have made.
 
 > 5 min exercise, 5 min review
 
-Turn to the person next to you and discuss the questions below. After 5 minutes,
+In breakout rooms with groups or 2 or 3 discuss the questions below. After 5 minutes,
 we'll go over responses as a class.
 
 - Why might we want to have different versions of a file?
