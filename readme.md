@@ -118,7 +118,7 @@ Watch me do the following:
 1. See the current state of the repository with `git status`
 1. Stage the new file I created with `git add index.html`
 1. Check the new status of the repository
-1. Commit my changes to the repository with `git commit`
+1. Commit my changes to the repository with `git commit -m "add index.html"`
 1. Check the new status of the repository
 
 ### Bonus! 🎉
