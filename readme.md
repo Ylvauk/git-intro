@@ -112,6 +112,7 @@ Watch me do the following:
 
 1. Navigate to my `sandbox` directory and create a new directory called
    `my_first_repository`
+1. cd into `my_first_repository`
 1. Turn this directory into a git repo with `git init`
 1. Create a file in the repository called `index.html`
 1. See the current state of the repository with `git status`
