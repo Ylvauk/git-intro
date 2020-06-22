@@ -227,6 +227,7 @@ Watch me work through the following:
 
 1. I'm going to add my remote repository on GitHub to my local repository with
    `git remote add origin <ssh_url_to_github_repo>`
+1. I'm going to run `git remote -v` and make sure my origin is set to my remote Github repo
 1. I'm going to push changes to my remote with `git push -u origin master`
 1. I'm going to visit my repo on GitHub to see if my changes made it 🤞
 1. I'm going to make a change to my repository, stage and commit that change,
@@ -239,9 +240,10 @@ Now it's your turn! Work through the following steps:
 1. Add your remote repository on GitHub to your local repository. What was the
    command for that? Use the repository on GitHub you created at the beginning
    of class.
-2. Push your changes to your remote. What was the command for that?
-3. Visit your repo on GitHub to see if the changes made it 🤞
-4. Make a change to your local repository, stage and commit that change, and
+1. How would you check that your origin is set to your remote repository?
+1. Push your changes to your remote. What was the command for that?
+1. Visit your repo on GitHub to see if the changes made it 🤞
+1. Make a change to your local repository, stage and commit that change, and
    then push it. What was the command for that? Is it the same as the previous
    command you used to push changes?
 
