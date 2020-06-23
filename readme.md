@@ -23,7 +23,7 @@ By the end of this, developers should be able to:
 1. Go to your git.generalassemb.ly profile
 1. In the top right corner, click the `+` and then click `New Repository`
 1. Create a new repository called `my_first_repository`
-1. Leave all the other inputs as their defaults
+1. Leave all the other inputs as their defaults. Make sure the checkbox for "Initialize this repository with a README" is ***unchecked***.
 1. Click `Create Repository`
 1. Give your instructor a thumbs up so they know you're finished
 
