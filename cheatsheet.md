@@ -24,7 +24,7 @@
 - create on github
 - locally:
   - `git remote add origin <github_url>`
-  - `git push -u origin master` - this tells git to push to origin master by
+  - `git push -u origin main` - this tells git to push to origin main by
     default
 
 ### Syncing changes
@@ -46,11 +46,11 @@ Forking and Pull Requests are features of Github (not git).
 1. Go to the repo you want to fork, and click the 'fork' button.
 2. Clone your fork using `git clone fork_repo_url`
 3. Make changes, add, commit.
-4. Push changes to your fork on GH: `git push origin master`
+4. Push changes to your fork on GH: `git push origin main`
 5. Open a pull request by clicking the Pull Request link on your fork page.
 
 ### Three Commands to Remember (you will use them all the time!)
 
 - `git add <file1> <file2>` ...
 - `git commit -m "descriptive message"`
-  - `git push -u origin master`
+  - `git push -u origin main`
