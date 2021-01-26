@@ -2,7 +2,7 @@
 
 # Git - Keeping Track of Files
 
-Git is a tool that you will use every day as a developer; it's an essential component to every developer's workflow.
+Git is an essential tool that you will likely use every day as a developer.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ Git is a tool that you will use every day as a developer; it's an essential comp
 Knowledge:
 
 1. Describe what Git is and what it does
-1. Explain the difference between Git and other versioning tools
+1. Explain the difference between Git and GitHub
 
 Skills:
 
@@ -27,27 +27,26 @@ Skills:
 1. Push a branch to the repo
 1. Create a pull request to original repo
 
-## Describe what git is and what it does
+## Version Control
 
-- Git is a version control system. Simply put, version control is a way of tracking _changes_ made to a file or group of files over time. If you've worked with track changes in Microsoft Word or Google Docs, then you're familiar with part of what Git does.
-- Git allows you to move project specific files from your "local" (or personal) computer to another Internet-connected computer which is acting as a central location for your code. This other computer is called a "remote repository."
-- All other computers that want to contribute to this specific project, will use the same remote repository (central computer), but send files from their own local computers.
+Git is a version control system (VCS). Version control is a way of tracking _changes_ made to a file or group of files over time. If you've worked with track changes in Microsoft Word or Google Docs, or if you've ever saved multiple copies of a file while editing it, then you've used a form of version control.  
 
 ![Versioning Diagram](images/wordVersioningTool.png)
 
-## Explain the difference between git and other versioning tools
+As a developer, tracking code changes provides us with the ability to examine the revision history for our code and revert to previous versions of a project when needed.  Mainly, these features give us the freedom and confidence to experiment!  With Git, we can easily try out ideas in a sandboxed version of our project, which can be merged into the base code when we get it working, or abandonned entirely if it doesn't work.  It also allows us to restore an older version of our code even after merging changes into our base project!
 
-There are other version control systems, like SVN and Mercurial, but Git is the most popular and the most powerful. Git functions very similarly to SVN and Mercurial, but in contrast to SVN, Git and Mercurial both add a local repository on each user's computer (aka, a distributed model).
+## Source Code Management
 
-This allows a user to keep a log of their local changes before finally pushing everything back to the remote repository. The user can also travel "back in time" to previous states that have been saved locally, but not yet pushed to the remote repository. This is great for when something goes wrong.
+More broadly, there are ***source code management*** (SCM) systems. SCM systems are vital tools for collaborating with others by centralizing where we store our source code. It also allows us to isolate our work until it is ready to be integrated, and quickly troubleshoot issues by identifying who contributed specific changes to the source code. Git fits into this broader category of SCM by providing us with the tools and commands to manage our portion of a larger project, while GitHub is used as the service that centralizes where team members collaborate and store the project's source code.
 
-Git will track changes made to a group of files in a directory. Git users can **commit** or save our changes and have access to a history of all the saves or **commits** that we have made.
+>  
 
-We can do incredibly complex operations related to version control thanks to the power of Git. In this class, we will use Git every single day to work on lessons, labs, homework, and projects. We'll get a preview of some of the most essential Git functions and commands in this lesson, and we'll build upon that knowledge with more advanced Git commands down the line. Using Git daily will strengthen your understanding of it as well as your skills with it over the next 12 weeks.
+> Git allows you to share a directory of files on your computer, known as the _local repository_, with another Internet-connected computer which is acting as a central location for your code (such as on a Github.com server), known as the _remote repository_. Storing your files in a remote repository has two major advantages, namely it acts as a back up, and enables collaboration with others.
 
-### A Quick Note: Git vs. GitHub vs. GitHub Enterprise
+Both version control and SCM systems are sometimes referred to simply as ***source control***.  Source control encompasses any system that gives us the ability to track and manage our most valuable asset as a developer: the code we write.  
 
-We're often asked what the differences between these three terms are.
+
+### Summary
 
 - **Git** refers to the version control system.
 - **GitHub** refers to [github.com](https://www.github.com), the cloud service that hosts code repositories. It's the largest software development platform on the Internet and was acquired by Microsoft in 2018. Public repositories are viewable by all users.
@@ -133,7 +132,7 @@ Open source software is popular because the source code for an open source appli
 ## Create a branch
 
 - When working on a specific feature, it's generally a good idea to create a "branch"
-- This is purely for organizational purposes
+- Branches give us the freedom to experiment safely!  When you create a new branch all of the code that is in the current branch becomes the basis of the new branch.  
   - In general, the `main` branch is for finished features
   - If you are working on a feature, it's not complete, but you want to save those changes to the repo (perhaps it's the end of the day), you can use branches to keep your changes off the `main` branch
 - To list all branches run `git branch`
@@ -143,7 +142,7 @@ Open source software is popular because the source code for an open source appli
 ## Push a branch to the repo
 
 - `git push origin newbranch` will push the currently active branch to the remote on a branch called "newbranch"
-- in general, you should push a local branch to a branch on the remote repo with the same name
+- In general, you should push a local branch to a branch on the remote repo with the same name
 
 ## Create a pull request to original repository
 
