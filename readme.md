@@ -39,7 +39,7 @@ As a developer, tracking code changes provides us with the ability to examine th
 
 More broadly, there are ***source code management*** (SCM) systems. SCM systems are vital tools for collaborating with others by centralizing where we store our source code. It also allows us to isolate our work until it is ready to be integrated, and quickly troubleshoot issues by identifying who contributed specific changes to the source code. Git fits into this broader category of SCM by providing us with the tools and commands to manage our portion of a larger project, while GitHub is used as the service that centralizes where team members collaborate and store the project's source code.
 
->  <img src="https://media.git.generalassemb.ly/user/17300/files/67cddd80-5fbb-11eb-8ff4-48e479936d8d" alt="Diagram depicting a local repository on a computer and a remote repository on GitHub" width="500"/>
+>  ![Diagram depicting a local repository on a computer and a remote repository on GitHub](https://media.git.generalassemb.ly/user/17300/files/b8930580-5fbe-11eb-824c-d203ca513629)
 >
 > Git allows you to share a directory of files on your computer, known as the _local repository_, with another Internet-connected computer which is acting as a central location for your code (such as on a Github.com server), known as the _remote repository_. Storing your files in a remote repository has two major advantages, namely it acts as a back up, and enables collaboration with others.
 
