@@ -31,7 +31,7 @@ Skills:
 
 Git is a version control system (VCS). Version control is a way of tracking _changes_ made to a file or group of files over time. If you've worked with track changes in Microsoft Word or Google Docs, or if you've ever saved multiple copies of a file while editing it, then you've used a form of version control.  
 
-![Versioning illustrated by showing several files in the Finder window with slightly different file names](https://media.git.generalassemb.ly/user/17300/files/1d029480-5fc0-11eb-9ad9-97bc3680a554)
+![Versioning illustrated by showing several files in the Finder window with slightly different file names](https://media.git.generalassemb.ly/user/17300/files/87b3d000-5fc0-11eb-8f14-36d557ad2fd3)
 
 As a developer, tracking code changes provides us with the ability to examine the revision history for our code and revert to previous versions of a project when needed.  Mainly, these features give us the freedom and confidence to experiment!  With Git, we can easily try out ideas in a sandboxed version of our project, which can be merged into the base code when we get it working, or abandonned entirely if it doesn't work.  It also allows us to restore an older version of our code even after merging changes into our base project!
 
