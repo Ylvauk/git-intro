@@ -108,10 +108,6 @@ The **staging area** is one of Git's more unique features, and it can take some 
 
 Instead of automatically committing all of the changes you've made since the last commit, the **staging area** lets you group _related changes_ into highly focused snapshots before actually committing to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece.
 
-Here's another way to think about it...
-
-![Git Local Diagram](/images/git-local.jpg)
-
 ## Pull changes from remote repo
 
 Pull any changes others made to the repo into your local version of the repo
